@@ -1,0 +1,52 @@
+#------------.java
+    List<Telegram_group> selectAll();
+    Telegram_group selectByGroupId(@Param("groupId") String groupId);
+    int updateLanguage(@Param("groupId") String groupId,@Param("language") String language);
+    int newChatMember(@Param("groupId") String groupId);
+    int leftChatMember(@Param("groupId") String groupId);
+    int upFinisgGame(@Param("groupId") String groupId);
+    int upMaxOfPeople(@Param("groupId") String groupId,@Param("people") Integer people);
+    int updateGroupData(Telegram_group record);
+
+
+#------------.xml
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from telegram_group
+  </select>
+
+  <select id="selectByGroupId" parameterType="java.lang.String"  resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from telegram_group
+    where groupId = #{groupId,jdbcType=VARCHAR}
+  </select>
+
+  <update id="updateLanguage" parameterType="string" >
+    update telegram_group  set language = #{language,jdbcType=VARCHAR}
+    where groupId = #{groupId,jdbcType=VARCHAR}
+  </update>
+  <update id="newChatMember" parameterType="string" >
+    update telegram_group  set joinTime = NOW(), joinFrequency = joinFrequency+1
+    where groupId = #{groupId,jdbcType=VARCHAR}
+  </update>
+  <update id="leftChatMember" parameterType="string" >
+    update telegram_group  set kickOutFrequency = kickOutFrequency+1
+    where groupId = #{groupId,jdbcType=VARCHAR}
+  </update>
+  <update id="upFinisgGame" parameterType="string" >
+    update telegram_group  set finishGame = finishGame+1
+    where groupId = #{groupId,jdbcType=VARCHAR}
+  </update>
+
+  <update id="upMaxOfPeople"  >
+    update telegram_group  set MaxOfPeople = #{people,jdbcType=INTEGER}
+    where groupId = #{groupId,jdbcType=VARCHAR} and MaxOfPeople &lt; #{people,jdbcType=INTEGER}
+  </update>
+  <update id="updateGroupData" parameterType="com.m.sql.entity.Telegram_group" >
+    update telegram_group
+    set title = #{title},
+        userName = #{userName}
+    where groupId = #{groupId,jdbcType=VARCHAR}
+  </update>

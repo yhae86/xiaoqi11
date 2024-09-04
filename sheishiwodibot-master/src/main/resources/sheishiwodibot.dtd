@@ -1,0 +1,12 @@
+<!ELEMENT sheishiwodibot (language+)>
+<!ELEMENT language (strings,words)>
+<!ELEMENT strings (string+)>
+<!ELEMENT string (#PCDATA) >
+<!ELEMENT words (word+)>
+<!ELEMENT word (word1,word2)>
+<!ELEMENT word1 (#PCDATA)>
+<!ELEMENT word2 (#PCDATA)>
+
+<!ATTLIST language language (en|zh_cn|zn|ja|hi-in|vi) #REQUIRED >
+<!ATTLIST language alias CDATA #REQUIRED>
+<!ATTLIST string name CDATA #REQUIRED >

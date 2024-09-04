@@ -1,0 +1,86 @@
+#------------.java
+    int upFraction(@Param("telegram_id") String telegram_id,@Param("fraction") Integer fraction );
+    int newCompleteGame(String[] telegram_id);
+    int newExitGame(String telegram_id);
+    int newWord_people(String[] telegram_id);
+    int newWord_spy(String[] telegram_id);
+    int newWord_people_victory(String[] telegram_id);
+    int newWord_spy_victory(String[] telegram_id);
+
+    int newJoinGame(String telegram_id);
+    int updateUserData(Telegram_user user);
+    List<Telegram_user> selectAll();
+    int updateLanguage(@Param("telegram_id") String telegram_id,@Param("language") String language);
+    Telegram_user selectByUserId(String userId);
+
+#------------.xml
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from telegram_user
+  </select>
+  <select id="selectByUserId" parameterType="string" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from telegram_user
+    where telegram_id = #{userId,jdbcType=VARCHAR}
+  </select>
+  <update id="newJoinGame" parameterType="string" >
+    update telegram_user  set joinGame = joinGame + 1
+    where telegram_id = #{telegram_id,jdbcType=VARCHAR}
+  </update>
+  <update id="newCompleteGame" parameterType="string" >
+    update telegram_user  set completeGame = completeGame + 1
+    where telegram_id in
+    <foreach item="item" collection="array" separator="," open="(" close=")">
+      #{item}
+    </foreach>
+  </update>
+  <update id="newExitGame" parameterType="string" >
+    update telegram_user  set exitGame = exitGame + 1
+    where telegram_id = #{telegram_id,jdbcType=VARCHAR}
+  </update>
+  <update id="newWord_people" parameterType="string" >
+    update telegram_user  set word_people = word_people + 1
+    where telegram_id in
+    <foreach item="item" collection="array" separator="," open="(" close=")">
+      #{item}
+    </foreach>
+  </update>
+  <update id="newWord_spy" parameterType="string" >
+    update telegram_user  set word_spy = word_spy + 1
+    where telegram_id in
+    <foreach item="item" collection="array" separator="," open="(" close=")">
+      #{item}
+    </foreach>
+  </update>
+  <update id="newWord_people_victory" parameterType="string" >
+    update telegram_user  set word_people_victory = word_people_victory + 1
+    where telegram_id in
+    <foreach item="item" collection="array" separator="," open="(" close=")">
+      #{item}
+    </foreach>
+  </update>
+  <update id="newWord_spy_victory" parameterType="string" >
+    update telegram_user  set word_spy_victory = word_spy_victory + 1
+    where telegram_id in
+    <foreach item="item" collection="array" separator="," open="(" close=")">
+      #{item}
+    </foreach>
+  </update>
+  <update id="upFraction"  >
+    update telegram_user  set fraction = fraction + #{fraction,jdbcType=INTEGER}
+    where telegram_id = #{telegram_id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateUserData" parameterType="com.m.sql.entity.Telegram_user" >
+    update telegram_user
+    set firstName = #{firstName},
+        lastName = #{lastName},
+        userName = #{userName}
+    where telegram_id = #{telegram_id,jdbcType=VARCHAR}
+  </update>
+
+  <update id="updateLanguage" parameterType="string" >
+    update telegram_user  set language = #{language,jdbcType=VARCHAR}
+    where telegram_id = #{telegram_id,jdbcType=VARCHAR}
+  </update>

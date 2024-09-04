@@ -1,0 +1,3602 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sheishiwodibot SYSTEM "sheishiwodibot.dtd">
+<sheishiwodibot>
+    <language language="en" alias="English">
+        <strings>
+            <string name="PleaseSetLanguage">
+                Please set language ^_^
+            </string>
+            <string name="languageSetFinish">
+                The {user} sets the language to {alias}
+            </string>
+            <string name="help">
+                <![CDATA[
+            Use the command /newgame to create a game. After the game starts, everyone will get their own game words, and some players will get secret agent words. Every civilian needs to describe his words and prove that he is not an undercover agent, but do not let the undercover agent know his words. Those with secret agent words also need to prove that they are not undercover agents.
+            Each round must have at least 60 seconds of voting time.
+            When the number of civilians is the same as the number of undercover agents, the undercover agents win !
+                ]]>
+            </string>
+            <string name="userCreateGame">
+                {user} creates a new game
+            </string>
+            <string name="commandInGroup">
+                Please use the command in the group ^_^
+            </string>
+            <string name="record">
+                <![CDATA[
+            Join the game: {joinGame} times
+            Complete the game: {completeGame} times
+            Quit the game: {exitGame} times
+            Civilian role: {word_people} games
+            Undercover role: {word_spy} games
+            Civilian victories: {word_people_victory} games
+            Undercover wins: {word_spy_victory} games
+            Fraction: {fraction}
+                ]]>
+            </string>
+            <string name="InTheGame">This group is in the game</string>
+            <string name="joinGame">join game</string>
+            <string name="GamePlayerWaiting">Undercover game waiting for players to enter, let's play together. Existing
+                members:
+            </string>
+            <string name="ready">Ready</string>
+            <string name="TimeoutShutdown">No operation for a long time, the game has been closed automatically!
+            </string>
+            <string name="sendWord"><![CDATA[Your game word in the {groupName} group is: <b>{word}</b>]]></string>
+            <string name="exitGame">{user} has exited the game</string>
+            <string name="speechTime">Next is the speech time. After {time} seconds, the {round} round of voting will
+                begin.
+            </string>
+            <string name="ViewWord">view word</string>
+            <string name="gameStart">All players are ready, the game starts</string>
+            <string name="votingStart">Start voting now, who do you want to eliminate?</string>
+            <string name="notVoteSelf">not vote self!</string>
+            <string name="abstain">Abstain🏳️</string>
+            <string name="success">success</string>
+            <string name="failure">failure</string>
+            <string name="abstained">{user} abstained</string>
+            <string name="notVote">{user} did not vote within the specified time</string>
+            <string name="votedTimeEnd">⌛️voted time end:</string>
+            <string name="everyoneVoted">✅Everyone voted:</string>
+            <string name="gameOver">GAME OVER</string>
+            <string name="aboutToVoteL">Voting soon,</string>
+            <string name="aboutToVoteR">Haven't spoken yet</string>
+            <string name="notAdmin">[<![CDATA[
+            <i>I didn’t see anyone talking, I might not have permission</i>
+            ]]></string>
+            <string name="userWordIs">{user}'s word is {word}</string>
+            <string name="eliminatedInThisRound">Eliminated in this round:</string>
+            <string name="gameSettlement">The game is being settled, please wait</string>
+            <string name="remainingPersonnel">Remaining personnel ({remainingPeople}/{totalPeople}):</string>
+
+        </strings>
+        <words>
+            <word>
+                <word1>Valentine's Day</word1>
+                <word2>Singles' Day</word2>
+            </word>
+            <word>
+                <word1>The Ugly Duckling</word1>
+                <word2>Cinderella</word2>
+            </word>
+            <word>
+                <word1>Rich second generation</word1>
+                <word2>tall and handsome</word2>
+            </word>
+            <word>
+                <word1>Bubble gum</word1>
+                <word2>lollipop</word2>
+            </word>
+            <word>
+                <word1>Salted fish</word1>
+                <word2>boiled fish</word2>
+            </word>
+            <word>
+                <word1>Shampoo</word1>
+                <word2>conditioner</word2>
+            </word>
+            <word>
+                <word1>Roller coaster</word1>
+                <word2>bumper car</word2>
+            </word>
+            <word>
+                <word1>Fan</word1>
+                <word2>air conditioner</word2>
+            </word>
+            <word>
+                <word1>Biscuits</word1>
+                <word2>potato chips</word2>
+            </word>
+            <word>
+                <word1>Glass</word1>
+                <word2>mirror</word2>
+            </word>
+            <word>
+                <word1>Paper towels</word1>
+                <word2>wet wipes</word2>
+            </word>
+            <word>
+                <word1>Guitar</word1>
+                <word2>lute</word2>
+            </word>
+            <word>
+                <word1>Train</word1>
+                <word2>subway</word2>
+            </word>
+            <word>
+                <word1>Cabbage</word1>
+                <word2>lettuce</word2>
+            </word>
+            <word>
+                <word1>Dolphins</word1>
+                <word2>sea lions</word2>
+            </word>
+            <word>
+                <word1>Paper towels</word1>
+                <word2>handkerchiefs</word2>
+            </word>
+            <word>
+                <word1>Go forward courageously</word1>
+                <word2>go all out</word2>
+            </word>
+            <word>
+                <word1>Myopic mouse</word1>
+                <word2>frog at the bottom of the well</word2>
+            </word>
+            <word>
+                <word1>Champion</word1>
+                <word2>first</word2>
+            </word>
+            <word>
+                <word1>Lavender</word1>
+                <word2>gypsophila.</word2>
+            </word>
+            <word>
+                <word1>Donnie Yen</word1>
+                <word2>Jet Li</word2>
+            </word>
+            <word>
+                <word1>First of all</word1>
+                <word2>ex-boyfriend</word2>
+            </word>
+            <word>
+                <word1>Jackfruit</word1>
+                <word2>durian</word2>
+            </word>
+            <word>
+                <word1>Memphis</word1>
+                <word2>Le Jia</word2>
+            </word>
+            <word>
+                <word1>Myopic mouse</word1>
+                <word2>frog at the bottom of the well</word2>
+            </word>
+            <word>
+                <word1>Chewing gum</word1>
+                <word2>xylitol</word2>
+            </word>
+            <word>
+                <word1>Chili</word1>
+                <word2>mustard sauce</word2>
+            </word>
+            <word>
+                <word1>Rich second generation</word1>
+                <word2>tall and handsome</word2>
+            </word>
+            <word>
+                <word1>Morning light</word1>
+                <word2>true color</word2>
+            </word>
+            <word>
+                <word1>White rabbit</word1>
+                <word2>golden monkey</word2>
+            </word>
+            <word>
+                <word1>Bread</word1>
+                <word2>cake</word2>
+            </word>
+            <word>
+                <word1>Paper towels</word1>
+                <word2>handkerchiefs</word2>
+            </word>
+            <word>
+                <word1>Cabbage</word1>
+                <word2>lettuce</word2>
+            </word>
+            <word>
+                <word1>Washing powder</word1>
+                <word2>soap powder</word2>
+            </word>
+            <word>
+                <word1>Dong Yong</word1>
+                <word2>Xu Xian</word2>
+            </word>
+            <word>
+                <word1>Mobile phone</word1>
+                <word2>landline</word2>
+            </word>
+            <word>
+                <word1>The Ugly Duckling</word1>
+                <word2>Cinderella</word2>
+            </word>
+            <word>
+                <word1>Spiderman</word1>
+                <word2>batman</word2>
+            </word>
+            <word>
+                <word1>Dolphins</word1>
+                <word2>sea lions</word2>
+            </word>
+            <word>
+                <word1>Lie in ambush on all sides</word1>
+                <word2>bewildered on all sides</word2>
+            </word>
+            <word>
+                <word1>Guitar</word1>
+                <word2>lute</word2>
+            </word>
+            <word>
+                <word1>Composition</word1>
+                <word2>essay</word2>
+            </word>
+            <word>
+                <word1>The remaining girl</word1>
+                <word2>sister royal</word2>
+            </word>
+            <word>
+                <word1>Soy milk</word1>
+                <word2>milk</word2>
+            </word>
+            <word>
+                <word1>Animals</word1>
+                <word2>plants</word2>
+            </word>
+            <word>
+                <word1>Valentine's Day</word1>
+                <word2>Singles' Day</word2>
+            </word>
+            <word>
+                <word1>Bubble gum</word1>
+                <word2>lollipop</word2>
+            </word>
+            <word>
+                <word1>Biscuits</word1>
+                <word2>potato chips</word2>
+            </word>
+            <word>
+                <word1>Glass</word1>
+                <word2>mirror</word2>
+            </word>
+            <word>
+                <word1>Fan</word1>
+                <word2>air conditioner</word2>
+            </word>
+            <word>
+                <word1>Computer</word1>
+                <word2>ipad</word2>
+            </word>
+            <word>
+                <word1>Bicycle</word1>
+                <word2>electric car</word2>
+            </word>
+            <word>
+                <word1>Roller coaster</word1>
+                <word2>bumper car</word2>
+            </word>
+            <word>
+                <word1>Paper towels</word1>
+                <word2>wet wipes</word2>
+            </word>
+            <word>
+                <word1>Hangzhou</word1>
+                <word2>Suzhou</word2>
+            </word>
+            <word>
+                <word1>Beard</word1>
+                <word2>eyebrows</word2>
+            </word>
+            <word>
+                <word1>Butterfly</word1>
+                <word2>bee</word2>
+            </word>
+            <word>
+                <word1>Beef jerky</word1>
+                <word2>pork jerky</word2>
+            </word>
+            <word>
+                <word1>Go forward courageously</word1>
+                <word2>go all out</word2>
+            </word>
+            <word>
+                <word1>Deep-fried dough sticks</word1>
+                <word2>twists and turns</word2>
+            </word>
+            <word>
+                <word1>Taiwan</word1>
+                <word2>Hong Kong</word2>
+            </word>
+            <word>
+                <word1>Shampoo</word1>
+                <word2>conditioner</word2>
+            </word>
+            <word>
+                <word1>Shower gel</word1>
+                <word2>skin care lotion</word2>
+            </word>
+            <word>
+                <word1>The Ugly Duckling</word1>
+                <word2>Cinderella</word2>
+            </word>
+            <word>
+                <word1>Salted fish</word1>
+                <word2>boiled fish</word2>
+            </word>
+            <word>
+                <word1>Quilts</word1>
+                <word2>sheets</word2>
+            </word>
+            <word>
+                <word1>Bus</word1>
+                <word2>subway</word2>
+            </word>
+            <word>
+                <word1>Potato flour</word1>
+                <word2>hot and sour powder</word2>
+            </word>
+            <word>
+                <word1>Memphis</word1>
+                <word2>Le Jia</word2>
+            </word>
+            <word>
+                <word1>Myopia glasses</word1>
+                <word2>contact lenses</word2>
+            </word>
+            <word>
+                <word1>Milk</word1>
+                <word2>soy milk</word2>
+            </word>
+            <word>
+                <word1>Cabbage</word1>
+                <word2>lettuce</word2>
+            </word>
+            <word>
+                <word1>Lafayette</word1>
+                <word2>my goodness</word2>
+            </word>
+            <word>
+                <word1>Palace lock heart jade</word1>
+                <word2>Palace lock bead curtain</word2>
+            </word>
+            <word>
+                <word1>Jiangnan style</word1>
+                <word2>the most dazzling national style</word2>
+            </word>
+            <word>
+                <word1>Mapo tofu</word1>
+                <word2>preserved egg tofu</word2>
+            </word>
+            <word>
+                <word1>Chewing gum</word1>
+                <word2>xylitol</word2>
+            </word>
+            <word>
+                <word1>Myopia glasses</word1>
+                <word2>contact lenses</word2>
+            </word>
+            <word>
+                <word1>Lie in ambush on all sides</word1>
+                <word2>bewildered on all sides</word2>
+            </word>
+            <word>
+                <word1>Cantaloupe</word1>
+                <word2>watermelon</word2>
+            </word>
+            <word>
+                <word1>Dragon Palm Eighteen Descending</word1>
+                <word2>Nine Yin White Bone Claws</word2>
+            </word>
+            <word>
+                <word1>Fruit oranges</word1>
+                <word2>fresh oranges</word2>
+            </word>
+            <word>
+                <word1>Absolute</word1>
+                <word2>language</word2>
+            </word>
+            <word>
+                <word1>Braised</word1>
+                <word2>spicy</word2>
+            </word>
+            <word>
+                <word1>Dolphins</word1>
+                <word2>sea lions</word2>
+            </word>
+            <word>
+                <word1>Burgers</word1>
+                <word2>meat burgers</word2>
+            </word>
+            <word>
+                <word1>Go forward courageously</word1>
+                <word2>go all out</word2>
+            </word>
+            <word>
+                <word1>Myopia glasses</word1>
+                <word2>contact lenses</word2>
+            </word>
+            <word>
+                <word1>Golden Monkey</word1>
+                <word2>White Rabbit Toffee</word2>
+            </word>
+            <word>
+                <word1>Champion</word1>
+                <word2>first</word2>
+            </word>
+            <word>
+                <word1>Myopic mouse</word1>
+                <word2>frog at the bottom of the well</word2>
+            </word>
+            <word>
+                <word1>Roller coaster</word1>
+                <word2>bumper car</word2>
+            </word>
+            <word>
+                <word1>Mobile phone</word1>
+                <word2>landline</word2>
+            </word>
+            <word>
+                <word1>Dry cleaning machine</word1>
+                <word2>spin dryer</word2>
+            </word>
+            <word>
+                <word1>Milk</word1>
+                <word2>soy milk</word2>
+            </word>
+            <word>
+                <word1>Dolphins</word1>
+                <word2>sea lions</word2>
+            </word>
+            <word>
+                <word1>Stairs</word1>
+                <word2>elevators</word2>
+            </word>
+            <word>
+                <word1>Butterfly</word1>
+                <word2>bee</word2>
+            </word>
+            <word>
+                <word1>Roller coaster</word1>
+                <word2>bumper car</word2>
+            </word>
+            <word>
+                <word1>Paper towels</word1>
+                <word2>handkerchiefs</word2>
+            </word>
+        </words>
+    </language>
+    <language language="zh_cn" alias="简体中文">
+        <strings>
+            <string name="commandInGroup">
+                请在群组中使用命令~
+            </string>
+            <string name="help">
+                <![CDATA[
+                使用命令 /newgame 创建游戏，游戏开始后每个人会得到自己的游戏词语，
+                少量玩家会获得卧底词语，每位平民玩家需要描述自己的词语，证明自己不是卧底，但是不要让卧底知道自己的词语，拿到卧底词语的玩家同样需要证明自己不是卧底。
+                每轮至少60秒参与投票。
+                当卧底和民众一样多，卧底就胜利了
+                ]]>
+            </string>
+            <string name="PleaseSetLanguage">
+                请设置语言 ~
+            </string>
+            <string name="languageSetFinish">
+                {user} 将语言设置为{alias}
+            </string>
+            <string name="userCreateGame">
+                {user}创建了一个新游戏
+            </string>
+            <string name="record">
+                <![CDATA[
+            加入游戏：{joinGame}次
+            完成游戏：{completeGame}次
+            退出游戏：{exitGame}次
+            平民角色：{word_people}场
+            卧底角色：{word_spy}场
+            平民胜场：{word_people_victory}场
+            卧底胜场：{word_spy_victory}场
+            分数：{fraction}
+               ]]>
+            </string>
+            <string name="InTheGame">这个群组正在游戏中</string>
+            <string name="joinGame">加入游戏</string>
+            <string name="GamePlayerWaiting">谁是卧底游戏等待玩家进入，一起来玩。
+                已加入:</string>
+            <string name="ready">准备</string>
+            <string name="TimeoutShutdown">长时间无操作，游戏已自动关闭！</string>
+            <string name="sendWord"><![CDATA[
+            你在{groupName}群组中的游戏词语是: <b>{word}</b>
+            ]]></string>
+            <string name="exitGame">{user}退出了游戏</string>
+            <string name="speechTime">接下来是发言时间。 {time}秒后将开始第 {round} 轮投票。</string>
+            <string name="ViewWord">查看词语</string>
+            <string name="gameStart">所有玩家准备就绪，游戏开始</string>
+            <string name="votingStart">现在开始投票，你想淘汰谁？</string>
+            <string name="notVoteSelf">不能投票自己</string>
+            <string name="abstain">放弃投票🏳️</string>
+            <string name="success">成功</string>
+            <string name="failure">失败</string>
+            <string name="abstained">{user}放弃了这一票</string>
+            <string name="notVote">{user} 没有在时间内进行投票</string>
+            <string name="votedTimeEnd">⌛️投票时间到：</string>
+            <string name="everyoneVoted">✅所有人都完成了投票：</string>
+            <string name="gameOver">游 戏 结 束</string>
+            <string name="aboutToVoteL">即将开始投票,</string>
+            <string name="aboutToVoteR">还没有发言</string>
+            <string name="notAdmin"><![CDATA[
+            <i>没有看到有人说话，我可能没有权限</i>
+            ]]></string>
+            <string name="userWordIs">{user} 的词语是 {word}</string>
+            <string name="eliminatedInThisRound">本轮淘汰:</string>
+            <string name="gameSettlement">游戏正在结算中，请稍候</string>
+            <string name="remainingPersonnel">剩余人员({remainingPeople}/{totalPeople}):</string>
+        </strings>
+        <words>
+            <word>
+                <word1>魔术师</word1>
+                <word2>魔法师</word2>
+            </word>
+            <word>
+                <word1>双胞胎</word1>
+                <word2>龙凤胎</word2>
+            </word>
+            <word>
+                <word1>情人节</word1>
+                <word2>光棍节</word2>
+            </word>
+            <word>
+                <word1>丑小鸭</word1>
+                <word2>灰姑娘</word2>
+            </word>
+            <word>
+                <word1>富二代</word1>
+                <word2>高富帅</word2>
+            </word>
+            <word>
+                <word1>生活费</word1>
+                <word2>零花钱</word2>
+            </word>
+            <word>
+                <word1>麦克风</word1>
+                <word2>扩音器</word2>
+            </word>
+            <word>
+                <word1>男朋友</word1>
+                <word2>前男友</word2>
+            </word>
+            <word>
+                <word1>泡泡糖</word1>
+                <word2>棒棒糖</word2>
+            </word>
+            <word>
+                <word1>口香糖</word1>
+                <word2>木糖醇</word2>
+            </word>
+            <word>
+                <word1>酸菜鱼</word1>
+                <word2>水煮鱼</word2>
+            </word>
+            <word>
+                <word1>果粒橙</word1>
+                <word2>鲜橙多</word2>
+            </word>
+            <word>
+                <word1>洗发露</word1>
+                <word2>护发素</word2>
+            </word>
+            <word>
+                <word1>过山车</word1>
+                <word2>碰碰车</word2>
+            </word>
+            <word>
+                <word1>白菜</word1>
+                <word2>生菜</word2>
+            </word>
+            <word>
+                <word1>包子</word1>
+                <word2>小笼包</word2>
+            </word>
+            <word>
+                <word1>云吞</word1>
+                <word2>馄饨</word2>
+            </word>
+            <word>
+                <word1>尿不湿</word1>
+                <word2>纸尿裤</word2>
+            </word>
+            <word>
+                <word1>壁纸</word1>
+                <word2>贴画</word2>
+            </word>
+            <word>
+                <word1>风扇</word1>
+                <word2>空调</word2>
+            </word>
+            <word>
+                <word1>饼干</word1>
+                <word2>薯片</word2>
+            </word>
+            <word>
+                <word1>玻璃</word1>
+                <word2>镜子</word2>
+            </word>
+            <word>
+                <word1>纸巾</word1>
+                <word2>湿巾</word2>
+            </word>
+            <word>
+                <word1>橙子</word1>
+                <word2>橘子</word2>
+            </word>
+            <word>
+                <word1>唇膏</word1>
+                <word2>口红</word2>
+            </word>
+            <word>
+                <word1>新年</word1>
+                <word2>跨年</word2>
+            </word>
+            <word>
+                <word1>吉他</word1>
+                <word2>琵琶</word2>
+            </word>
+            <word>
+                <word1>火车</word1>
+                <word2>地铁</word2>
+            </word>
+            <word>
+                <word1>保安</word1>
+                <word2>保镖</word2>
+            </word>
+            <word>
+                <word1>海豚</word1>
+                <word2>海狮</word2>
+            </word>
+            <word>
+                <word1>水盆</word1>
+                <word2>水桶</word2>
+            </word>
+            <word>
+                <word1>烤肉</word1>
+                <word2>涮肉</word2>
+            </word>
+            <word>
+                <word1>气泡</word1>
+                <word2>水泡</word2>
+            </word>
+            <word>
+                <word1>葡萄</word1>
+                <word2>提子</word2>
+            </word>
+            <word>
+                <word1>太监</word1>
+                <word2>人妖</word2>
+            </word>
+            <word>
+                <word1>小品</word1>
+                <word2>话剧</word2>
+            </word>
+            <word>
+                <word1>裸婚</word1>
+                <word2>闪婚</word2>
+            </word>
+            <word>
+                <word1>作家</word1>
+                <word2>编剧</word2>
+            </word>
+            <word>
+                <word1>警察</word1>
+                <word2>捕快</word2>
+            </word>
+            <word>
+                <word1>奖牌</word1>
+                <word2>金牌</word2>
+            </word>
+            <word>
+                <word1>那英</word1>
+                <word2>韩红</word2>
+            </word>
+            <word>
+                <word1>枕头</word1>
+                <word2>抱枕</word2>
+            </word>
+            <word>
+                <word1>同学</word1>
+                <word2>同桌</word2>
+            </word>
+            <word>
+                <word1>婚纱</word1>
+                <word2>喜服</word2>
+            </word>
+            <word>
+                <word1>小沈阳</word1>
+                <word2>宋小宝</word2>
+            </word>
+            <word>
+                <word1>神雕侠侣</word1>
+                <word2>天龙八部</word2>
+            </word>
+            <word>
+                <word1>勇往直前</word1>
+                <word2>全力以赴</word2>
+            </word>
+            <word>
+                <word1>鼠目寸光</word1>
+                <word2>井底之蛙</word2>
+            </word>
+            <word>
+                <word1>盒子</word1>
+                <word2>箱子</word2>
+            </word>
+            <word>
+                <word1>妈妈</word1>
+                <word2>娘</word2>
+            </word>
+            <word>
+                <word1>高跟鞋</word1>
+                <word2>增高鞋</word2>
+            </word>
+            <word>
+                <word1>冠军</word1>
+                <word2>第一</word2>
+            </word>
+            <word>
+                <word1>龙凤呈祥</word1>
+                <word2>鸳鸯戏水</word2>
+            </word>
+            <word>
+                <word1>包青天</word1>
+                <word2>狄仁杰</word2>
+            </word>
+            <word>
+                <word1>薰衣草</word1>
+                <word2>满天星</word2>
+            </word>
+            <word>
+                <word1>甄子丹</word1>
+                <word2>李连杰</word2>
+            </word>
+            <word>
+                <word1>菠萝蜜</word1>
+                <word2>榴莲</word2>
+            </word>
+            <word>
+                <word1>孟非</word1>
+                <word2>乐嘉</word2>
+            </word>
+            <word>
+                <word1>辣椒</word1>
+                <word2>芥末</word2>
+            </word>
+            <word>
+                <word1>晨光</word1>
+                <word2>真彩</word2>
+            </word>
+            <word>
+                <word1>大白兔</word1>
+                <word2>金丝猴</word2>
+            </word>
+            <word>
+                <word1>谢娜张杰</word1>
+                <word2>邓超孙俪</word2>
+            </word>
+            <word>
+                <word1>面包</word1>
+                <word2>蛋糕</word2>
+            </word>
+            <word>
+                <word1>鱼香肉丝</word1>
+                <word2>四喜丸子</word2>
+            </word>
+            <word>
+                <word1>洗衣粉</word1>
+                <word2>皂角粉</word2>
+            </word>
+            <word>
+                <word1>甄嬛传</word1>
+                <word2>红楼梦</word2>
+            </word>
+            <word>
+                <word1>董永</word1>
+                <word2>许仙</word2>
+            </word>
+            <word>
+                <word1>贵妃醉酒</word1>
+                <word2>黛玉葬花</word2>
+            </word>
+            <word>
+                <word1>手机</word1>
+                <word2>座机</word2>
+            </word>
+            <word>
+                <word1>蜘蛛侠</word1>
+                <word2>蝙蝠侠</word2>
+            </word>
+            <word>
+                <word1>赵敏</word1>
+                <word2>黄蓉</word2>
+            </word>
+            <word>
+                <word1>十面埋伏</word1>
+                <word2>四面楚歌</word2>
+            </word>
+            <word>
+                <word1>金庸</word1>
+                <word2>古龙</word2>
+            </word>
+            <word>
+                <word1>作文</word1>
+                <word2>论文</word2>
+            </word>
+            <word>
+                <word1>语无伦次</word1>
+                <word2>词不达意</word2>
+            </word>
+            <word>
+                <word1>剩女</word1>
+                <word2>御姐</word2>
+            </word>
+            <word>
+                <word1>豆浆</word1>
+                <word2>牛奶</word2>
+            </word>
+            <word>
+                <word1>森马</word1>
+                <word2>以纯</word2>
+            </word>
+            <word>
+                <word1>玫瑰</word1>
+                <word2>月季</word2>
+            </word>
+            <word>
+                <word1>结婚</word1>
+                <word2>订婚</word2>
+            </word>
+            <word>
+                <word1>动物</word1>
+                <word2>植物</word2>
+            </word>
+            <word>
+                <word1>张韶涵</word1>
+                <word2>王心凌</word2>
+            </word>
+            <word>
+                <word1>电脑</word1>
+                <word2>ipad</word2>
+            </word>
+            <word>
+                <word1>自行车</word1>
+                <word2>电动车</word2>
+            </word>
+            <word>
+                <word1>班主任</word1>
+                <word2>辅导员</word2>
+            </word>
+            <word>
+                <word1>鸭舌帽</word1>
+                <word2>遮阳帽</word2>
+            </word>
+            <word>
+                <word1>童话</word1>
+                <word2>神话</word2>
+            </word>
+            <word>
+                <word1>刘诗诗</word1>
+                <word2>刘亦菲</word2>
+            </word>
+            <word>
+                <word1>铁观音</word1>
+                <word2>碧螺春</word2>
+            </word>
+            <word>
+                <word1>若曦</word1>
+                <word2>晴川</word2>
+            </word>
+            <word>
+                <word1>杭州</word1>
+                <word2>苏州</word2>
+            </word>
+            <word>
+                <word1>老佛爷</word1>
+                <word2>老天爷</word2>
+            </word>
+            <word>
+                <word1>首尔</word1>
+                <word2>东京</word2>
+            </word>
+            <word>
+                <word1>胡子</word1>
+                <word2>眉毛</word2>
+            </word>
+            <word>
+                <word1>蝴蝶</word1>
+                <word2>蜜蜂</word2>
+            </word>
+            <word>
+                <word1>图书馆</word1>
+                <word2>图书店</word2>
+            </word>
+            <word>
+                <word1>牛肉干</word1>
+                <word2>猪肉脯</word2>
+            </word>
+            <word>
+                <word1>油条</word1>
+                <word2>麻花</word2>
+            </word>
+            <word>
+                <word1>香港</word1>
+                <word2>台湾</word2>
+            </word>
+            <word>
+                <word1>沐浴露</word1>
+                <word2>护肤水</word2>
+            </word>
+            <word>
+                <word1>被子</word1>
+                <word2>床单</word2>
+            </word>
+            <word>
+                <word1>公交</word1>
+                <word2>地铁</word2>
+            </word>
+            <word>
+                <word1>福尔摩斯</word1>
+                <word2>工藤新一</word2>
+            </word>
+            <word>
+                <word1>近视眼镜</word1>
+                <word2>隐形眼镜</word2>
+            </word>
+            <word>
+                <word1>何炅</word1>
+                <word2>李维嘉</word2>
+            </word>
+            <word>
+                <word1>降龙十八掌</word1>
+                <word2>九阴白骨爪</word2>
+            </word>
+            <word>
+                <word1>红烧牛肉面</word1>
+                <word2>香辣牛肉面</word2>
+            </word>
+            <word>
+                <word1>汉堡包</word1>
+                <word2>肉夹馍</word2>
+            </word>
+            <word>
+                <word1>两小无猜</word1>
+                <word2>青梅竹马</word2>
+            </word>
+            <word>
+                <word1>干洗机</word1>
+                <word2>甩干机</word2>
+            </word>
+            <word>
+                <word1>楼梯</word1>
+                <word2>电梯</word2>
+            </word>
+            <word>
+                <word1>钢笔</word1>
+                <word2>中性笔</word2>
+            </word>
+            <word>
+                <word1>鸡蛋</word1>
+                <word2>鸭蛋</word2>
+            </word>
+            <word>
+                <word1>脸盆</word1>
+                <word2>水桶</word2>
+            </word>
+            <word>
+                <word1>绿茶</word1>
+                <word2>苦茶</word2>
+            </word>
+            <word>
+                <word1>反弹琵琶</word1>
+                <word2>乱弹棉花</word2>
+            </word>
+            <word>
+                <word1>卷发</word1>
+                <word2>直发</word2>
+            </word>
+            <word>
+                <word1>端午节</word1>
+                <word2>中秋节</word2>
+            </word>
+            <word>
+                <word1>皇帝</word1>
+                <word2>太子</word2>
+            </word>
+            <word>
+                <word1>男人</word1>
+                <word2>男孩</word2>
+            </word>
+            <word>
+                <word1>女人</word1>
+                <word2>美女</word2>
+            </word>
+            <word>
+                <word1>麻雀</word1>
+                <word2>乌鸦</word2>
+            </word>
+            <word>
+                <word1>胖子</word1>
+                <word2>肥肉</word2>
+            </word>
+            <word>
+                <word1>火炮</word1>
+                <word2>迫击炮</word2>
+            </word>
+            <word>
+                <word1>小矮人</word1>
+                <word2>葫芦娃</word2>
+            </word>
+            <word>
+                <word1>秤砣</word1>
+                <word2>砝码</word2>
+            </word>
+            <word>
+                <word1>空气</word1>
+                <word2>氧气</word2>
+            </word>
+            <word>
+                <word1>足球</word1>
+                <word2>篮球</word2>
+            </word>
+            <word>
+                <word1>乔丹</word1>
+                <word2>奥利尔</word2>
+            </word>
+            <word>
+                <word1>cs</word1>
+                <word2>cf</word2>
+            </word>
+            <word>
+                <word1>中国移动</word1>
+                <word2>中国联通</word2>
+            </word>
+            <word>
+                <word1>统一卤肉面</word1>
+                <word2>老坛酸菜面</word2>
+            </word>
+            <word>
+                <word1>钟</word1>
+                <word2>表</word2>
+            </word>
+            <word>
+                <word1>吸血鬼</word1>
+                <word2>僵尸</word2>
+            </word>
+            <word>
+                <word1>瓜子</word1>
+                <word2>花生</word2>
+            </word>
+            <word>
+                <word1>伊利</word1>
+                <word2>蒙牛</word2>
+            </word>
+            <word>
+                <word1>空白</word1>
+                <word2>空气</word2>
+            </word>
+            <word>
+                <word1>空白</word1>
+                <word2>空旷</word2>
+            </word>
+            <word>
+                <word1>草原</word1>
+                <word2>草地</word2>
+            </word>
+            <word>
+                <word1>草莓</word1>
+                <word2>蓝莓</word2>
+            </word>
+            <word>
+                <word1>地瓜</word1>
+                <word2>凉瓜</word2>
+            </word>
+            <word>
+                <word1>Intel</word1>
+                <word2>AMD</word2>
+            </word>
+            <word>
+                <word1>冥王星</word1>
+                <word2>海王星</word2>
+            </word>
+            <word>
+                <word1>美少女</word1>
+                <word2>小可爱</word2>
+            </word>
+            <word>
+                <word1>舒服</word1>
+                <word2>快活</word2>
+            </word>
+            <word>
+                <word1>桃子</word1>
+                <word2>猕猴桃</word2>
+            </word>
+            <word>
+                <word1>酒吧</word1>
+                <word2>舞厅</word2>
+            </word>
+            <word>
+                <word1>DJ</word1>
+                <word2>电音</word2>
+            </word>
+            <word>
+                <word1>铀-235</word1>
+                <word2>钚-238</word2>
+            </word>
+            <word>
+                <word1>防空洞</word1>
+                <word2>地下室</word2>
+            </word>
+            <word>
+                <word1>古墓</word1>
+                <word2>宝藏</word2>
+            </word>
+            <word>
+                <word1>金银</word1>
+                <word2>珠宝</word2>
+            </word>
+            <word>
+                <word1>火苗</word1>
+                <word2>打火机</word2>
+            </word>
+            <word>
+                <word1>燕子</word1>
+                <word2>喜鹊</word2>
+            </word>
+            <word>
+                <word1>鼠标</word1>
+                <word2>键鼠</word2>
+            </word>
+            <word>
+                <word1>建筑</word1>
+                <word2>大厦</word2>
+            </word>
+
+            <word>
+                <word1>头盔</word1>
+                <word2>安全帽</word2>
+            </word>
+            <word>
+                <word1>腋毛</word1>
+                <word2>腿毛</word2>
+            </word>
+            <word>
+                <word1>牛奶</word1>
+                <word2>奶牛</word2>
+            </word>
+            <word>
+                <word1>母乳</word1>
+                <word2>奶粉</word2>
+            </word>
+            <word>
+                <word1>激情四射</word1>
+                <word2>活蹦乱跳</word2>
+            </word>
+            <word>
+                <word1>浴缸</word1>
+                <word2>鱼缸</word2>
+            </word>
+            <word>
+                <word1>镜子</word1>
+                <word2>玻璃</word2>
+            </word>
+            <word>
+                <word1>海豹</word1>
+                <word2>海狮</word2>
+            </word>
+            <word>
+                <word1>七喜</word1>
+                <word2>芬达</word2>
+            </word>
+            <word>
+                <word1>跨年</word1>
+                <word2>除夕</word2>
+            </word>
+            <word>
+                <word1>剑齿虎</word1>
+                <word2>母老虎</word2>
+            </word>
+            <word>
+                <word1>妇炎洁</word1>
+                <word2>洗洁精</word2>
+            </word>
+            <word>
+                <word1>菊花</word1>
+                <word2>桃花</word2>
+            </word>
+            <word>
+                <word1>妻管严</word1>
+                <word2>吃软饭</word2>
+            </word>
+            <word>
+                <word1>保暖裤</word1>
+                <word2>秋裤</word2>
+            </word>
+            <word>
+                <word1>相亲</word1>
+                <word2>约会</word2>
+            </word>
+            <word>
+                <word1>搭讪</word1>
+                <word2>勾搭</word2>
+            </word>
+            <word>
+                <word1>卫生巾</word1>
+                <word2>卫生纸</word2>
+            </word>
+            <word>
+                <word1>口罩</word1>
+                <word2>面具</word2>
+            </word>
+            <word>
+                <word1>老友记</word1>
+                <word2>武林外传</word2>
+            </word>
+            <word>
+                <word1>家有儿女</word1>
+                <word2>我爱我家</word2>
+            </word>
+            <word>
+                <word1>胖子</word1>
+                <word2>肥肉</word2>
+            </word>
+            <word>
+                <word1>蜘蛛侠</word1>
+                <word2>蜘蛛精</word2>
+            </word>
+            <word>
+                <word1>麦当劳</word1>
+                <word2>必胜客</word2>
+            </word>
+            <word>
+                <word1>律师</word1>
+                <word2>法官</word2>
+            </word>
+            <word>
+                <word1>共产党</word1>
+                <word2>国民党</word2>
+            </word>
+            <word>
+                <word1>内奸</word1>
+                <word2>汉奸</word2>
+            </word>
+            <word>
+                <word1>加多宝</word1>
+                <word2>王老吉</word2>
+            </word>
+            <word>
+                <word1>粉丝</word1>
+                <word2>米线</word2>
+            </word>
+            <word>
+                <word1>爷爷</word1>
+                <word2>姥爷</word2>
+            </word>
+            <word>
+                <word1>可口可乐</word1>
+                <word2>百事可乐</word2>
+            </word>
+            <word>
+                <word1>散文</word1>
+                <word2>小说</word2>
+            </word>
+            <word>
+                <word1>肾虚</word1>
+                <word2>蛋疼</word2>
+            </word>
+            <word>
+                <word1>尿壶</word1>
+                <word2>水壶</word2>
+            </word>
+            <word>
+                <word1>天外有天</word1>
+                <word2>人外有人</word2>
+            </word>
+            <word>
+                <word1>两小无猜</word1>
+                <word2>青梅竹马</word2>
+            </word>
+            <word>
+                <word1>流氓</word1>
+                <word2>色狼</word2>
+            </word>
+            <word>
+                <word1>性感</word1>
+                <word2>美丽</word2>
+            </word>
+            <word>
+                <word1>鸡毛</word1>
+                <word2>鸭毛</word2>
+            </word>
+        </words>
+    </language>
+    <language language="ja" alias="日本語">
+        <strings>
+            <string name="commandInGroup">
+                グループでコマンドを使用してください~
+            </string>
+            <string name="help">
+                <![CDATA[
+                コマンド /newgame を使用してゲームを作成します。 ゲーム開始後、全員が自分のゲームワードを取得し、一部のプレイヤーはシークレットエージェントのワードを取得します。 すべての民間人は彼の言葉を説明し、彼が覆面捜査官ではないことを証明する必要がありますが、覆面捜査官に彼の言葉を知らせないでください。 秘密諜報員の言葉を持っている人は、自分が隠蔽工作員でないことも証明する必要があります。
+                各ラウンドには、少なくとも60秒の投票時間が必要です。
+                民間人の数が覆面捜査官の数と同じになったとき、覆面捜査官の勝利！
+                ]]>
+            </string>
+            <string name="PleaseSetLanguage">
+                言語を設定してください^ _ ^
+            </string>
+            <string name="languageSetFinish">
+                {user}言語を{alias}に設定します
+            </string>
+            <string name="userCreateGame">
+                {user} さんが新しいゲームを作成しました
+            </string>
+            <string name="record">
+                <![CDATA[
+                ゲームに参加する：{joinGame}回
+                ゲームを完了する：{completeGame}回
+                ゲームを終了します：{exitGame}回
+                民間人の役割：{word_people}ゲーム
+                アンダーカバーの役割: {word_spy} フィールド
+                民間人の勝利: {word_people_victory}
+                アンダーカバーの勝利: {word_spy_victory} ゲーム
+                分数: {fraction}
+               ]]>
+            </string>
+            <string name="InTheGame">このグループは遊んでいます</string>
+            <string name="joinGame">ゲームに参加する</string>
+            <string name="GamePlayerWaiting">プレイヤーが参加して一緒にプレイするのを待っている秘密のゲームは誰ですか。 参加しました:</string>
+            <string name="ready">準備ができました</string>
+            <string name="TimeoutShutdown">長時間操作が無いと自動でゲーム終了！</string>
+            <string name="sendWord"><![CDATA[
+                {groupName} グループのゲーム ワードは次のとおりです: <b>{word}</b>
+            ]]></string>
+            <string name="exitGame">{user}はゲームを終了します</string>
+            <string name="speechTime">次はスピーチの時間です。 {round} ラウンドの投票は {time} 秒後に始まります。</string>
+            <string name="ViewWord">wordを見る</string>
+            <string name="gameStart">すべてのプレイヤーの準備が整い、ゲームが始まります</string>
+            <string name="votingStart">今すぐ投票を始めましょう。誰を排除しますか？</string>
+            <string name="notVoteSelf">自分に投票することはできません</string>
+            <string name="abstain">投票を控える🏳️</string>
+            <string name="success">成功</string>
+            <string name="failure">失敗</string>
+            <string name="abstained">{user}はこの投票を放棄しました</string>
+            <string name="notVote">{user}が制限時間内に投票しませんでした</string>
+            <string name="votedTimeEnd">⌛️投票タイムアップ：</string>
+            <string name="everyoneVoted">✅みんなが投票した：</string>
+            <string name="gameOver">ゲームオーバー</string>
+            <string name="aboutToVoteL">投票を開始します、</string>
+            <string name="aboutToVoteR">まだ話していない</string>
+            <string name="notAdmin"><![CDATA[
+            <i>誰も話していなかった、許可がないかもしれない</i>
+            ]]></string>
+            <string name="userWordIs">{user}のwordは{word}です</string>
+            <string name="eliminatedInThisRound">このラウンドで敗退:</string>
+            <string name="gameSettlement">ゲームは解決中です。しばらくお待ちください</string>
+            <string name="remainingPersonnel">残りの人員({remainingPeople}/{totalPeople}):</string>
+        </strings>
+        <words>
+            <word>
+                <word1>双子</word1>
+                <word2>ドラゴンとフェニックスの胎児</word2>
+            </word>
+            <word>
+                <word1>バレンタインデー</word1>
+                <word2>光棍節</word2>
+            </word>
+            <word>
+                <word1>醜いアヒルの子</word1>
+                <word2>シンデレラ</word2>
+            </word>
+            <word>
+                <word1>リッチな第2世代</word1>
+                <word2>ガオフーシュアイ</word2>
+            </word>
+            <word>
+                <word1>生活費</word1>
+                <word2>小銭</word2>
+            </word>
+            <word>
+                <word1>マイク</word1>
+                <word2>アンプ</word2>
+            </word>
+            <word>
+                <word1>彼氏</word1>
+                <word2>元カレ</word2>
+            </word>
+            <word>
+                <word1>バブルガム</word1>
+                <word2>ロリポップ</word2>
+            </word>
+            <word>
+                <word1>チューインガム</word1>
+                <word2>キシリトール</word2>
+            </word>
+            <word>
+                <word1>ザワークラウトの魚</word1>
+                <word2>煮魚</word2>
+            </word>
+            <word>
+                <word1>フルーツオレンジ</word1>
+                <word2>より新鮮なオレンジ</word2>
+            </word>
+            <word>
+                <word1>シャンプー</word1>
+                <word2>コンディショナー</word2>
+            </word>
+            <word>
+                <word1>ローラーコースター</word1>
+                <word2>バンパーカー</word2>
+            </word>
+            <word>
+                <word1>白菜</word1>
+                <word2>レタス</word2>
+            </word>
+            <word>
+                <word1>パン</word1>
+                <word2>小籠包</word2>
+            </word>
+            <word>
+                <word1>天然おむつ</word1>
+                <word2>おむつ</word2>
+            </word>
+            <word>
+                <word1>ファン</word1>
+                <word2>エアコン</word2>
+            </word>
+            <word>
+                <word1>クッキー</word1>
+                <word2>ポテトチップス</word2>
+            </word>
+            <word>
+                <word1>ガラス</word1>
+                <word2>ミラー</word2>
+            </word>
+            <word>
+                <word1>ギター</word1>
+                <word2>ぴぱ</word2>
+            </word>
+            <word>
+                <word1>トレーニング</word1>
+                <word2>地下鉄</word2>
+            </word>
+            <word>
+                <word1>セキュリティ</word1>
+                <word2>ボディーガード</word2>
+            </word>
+            <word>
+                <word1>イルカ</word1>
+                <word2>アシカ</word2>
+            </word>
+            <word>
+                <word1>流域</word1>
+                <word2>バケット</word2>
+            </word>
+            <word>
+                <word1>バーベキュー</word1>
+                <word2>しゃぶしゃぶ</word2>
+            </word>
+            <word>
+                <word1>バブル</word1>
+                <word2>ブリスター</word2>
+            </word>
+            <word>
+                <word1>スケッチ</word1>
+                <word2>ドラマ</word2>
+            </word>
+            <word>
+                <word1>裸の結婚</word1>
+                <word2>フラッシュ結婚</word2>
+            </word>
+            <word>
+                <word1>作成者</word1>
+                <word2>脚本家</word2>
+            </word>
+            <word>
+                <word1>警察</word1>
+                <word2>すばやくキャッチ</word2>
+            </word>
+            <word>
+                <word1>メダル</word1>
+                <word2>金メダル</word2>
+            </word>
+            <word>
+                <word1>クラスメート</word1>
+                <word2>同じテーブルで</word2>
+            </word>
+            <word>
+                <word1>ウェディングドレス</word1>
+                <word2>Xifu</word2>
+            </word>
+            <word>
+                <word1>風船ガム</word1>
+                <word2>ロリポップ</word2>
+            </word>
+            <word>
+                <word1>リトル瀋陽</word1>
+                <word2>ソン・シャオバオ</word2>
+            </word>
+            <word>
+                <word1>射鵰英雄伝説</word1>
+                <word2>天竜の8つの師団</word2>
+            </word>
+            <word>
+                <word1>勇敢に前進</word1>
+                <word2>全力で</word2>
+            </word>
+            <word>
+                <word1>マウスは近視眼的です</word1>
+                <word2>井戸の底にいるカエル</word2>
+            </word>
+            <word>
+                <word1>お母さん</word1>
+                <word2>ニャン</word2>
+            </word>
+            <word>
+                <word1>ハイヒール</word1>
+                <word2>上履き</word2>
+            </word>
+            <word>
+                <word1>チャンピオン</word1>
+                <word2>最初</word2>
+            </word>
+            <word>
+                <word1>ドラゴンとフェニックスは繁栄しています</word1>
+                <word2>オシドリが水中で遊ぶ</word2>
+            </word>
+            <word>
+                <word1>ラベンダー</word1>
+                <word2>カスミソウ</word2>
+            </word>
+            <word>
+                <word1>円ジダン</word1>
+                <word2>ジェットリー</word2>
+            </word>
+            <word>
+                <word1>彼氏</word1>
+                <word2>元カレ</word2>
+            </word>
+            <word>
+                <word1>ジャックフルーツ</word1>
+                <word2>ドリアン</word2>
+            </word>
+            <word>
+                <word1>マイク</word1>
+                <word2>アンプ</word2>
+            </word>
+            <word>
+                <word1>双子</word1>
+                <word2>ドラゴンとフェニックスの胎児</word2>
+            </word>
+            <word>
+                <word1>マウスは近視眼的です</word1>
+                <word2>井戸の底にいるカエル</word2>
+            </word>
+            <word>
+                <word1>チューインガム</word1>
+                <word2>キシリトール</word2>
+            </word>
+            <word>
+                <word1>チリ</word1>
+                <word2>マスタード</word2>
+            </word>
+            <word>
+                <word1>リッチな第2世代</word1>
+                <word2>ガオ・フー・シュアイ</word2>
+            </word>
+            <word>
+                <word1>大きな白いウサギ</word1>
+                <word2>ゴールデンモンキー</word2>
+            </word>
+            <word>
+                <word1>那英</word1>
+                <word2>韓紅</word2>
+            </word>
+            <word>
+                <word1>Xie Na Zhang Jie</word1>
+                <word2>D超と孫 Li</word2>
+            </word>
+            <word>
+                <word1>パン</word1>
+                <word2>ケーキ</word2>
+            </word>
+            <word>
+                <word1>ウェディングドレス</word1>
+                <word2>Xifu</word2>
+            </word>
+            <word>
+                <word1>豚バラ肉 魚の旨味</word1>
+                <word2>Sixi ミートボール</word2>
+            </word>
+            <word>
+                <word1>ペーパータオル</word1>
+                <word2>ハンカチ</word2>
+            </word>
+            <word>
+                <word1>洗剤</word1>
+                <word2>サポニンパウダー</word2>
+            </word>
+            <word>
+                <word1>Zhen？伝記</word1>
+                <word2>夢の赤い邸宅</word2>
+            </word>
+            <word>
+                <word1>リトル瀋陽</word1>
+                <word2>ソン・シャオバオ</word2>
+            </word>
+            <word>
+                <word1>ドンヨン</word1>
+                <word2>Xu Xian</word2>
+            </word>
+            <word>
+                <word1>新年</word1>
+                <word2>大晦日</word2>
+            </word>
+            <word>
+                <word1>皇太后は酔っている</word1>
+                <word2>大湯の埋葬花</word2>
+            </word>
+            <word>
+                <word1>携帯電話</word1>
+                <word2>固定電話</word2>
+            </word>
+            <word>
+                <word1>醜いアヒルの子</word1>
+                <word2>シンデレラ</word2>
+            </word>
+            <word>
+                <word1>スパイダーマン</word1>
+                <word2>バットマン</word2>
+            </word>
+            <word>
+                <word1>趙敏</word1>
+                <word2>黄 R</word2>
+            </word>
+            <word>
+                <word1>十面埋伏</word1>
+                <word2>四方八方に悩む</word2>
+            </word>
+            <word>
+                <word1>ジン・ヨン</word1>
+                <word2>Gulong</word2>
+            </word>
+            <word>
+                <word1>構成</word1>
+                <word2>論文</word2>
+            </word>
+            <word>
+                <word1>支離滅裂な言葉</word1>
+                <word2>その言葉は意味を表していない</word2>
+            </word>
+            <word>
+                <word1>残りの女性</word1>
+                <word2>ユー・ジエ</word2>
+            </word>
+            <word>
+                <word1>豆乳</word1>
+                <word2>ミルク</word2>
+            </word>
+            <word>
+                <word1>セミナー</word1>
+                <word2>Yi pure</word2>
+            </word>
+            <word>
+                <word1>バラ</word1>
+                <word2>チャイニーズローズ</word2>
+            </word>
+            <word>
+                <word1>クラスメート</word1>
+                <word2>同じテーブルで</word2>
+            </word>
+            <word>
+                <word1>結婚</word1>
+                <word2>エンゲージメント</word2>
+            </word>
+            <word>
+                <word1>バブル</word1>
+                <word2>ブリスター</word2>
+            </word>
+            <word>
+                <word1>動物</word1>
+                <word2>植物</word2>
+            </word>
+            <word>
+                <word1>バレンタインデー</word1>
+                <word2>光棍節</word2>
+            </word>
+            <word>
+                <word1>張韶濱</word1>
+                <word2>王心凌</word2>
+            </word>
+            <word>
+                <word1>風船ガム</word1>
+                <word2>ロリポップ</word2>
+            </word>
+            <word>
+                <word1>クッキー</word1>
+                <word2>ポテトチップス</word2>
+            </word>
+            <word>
+                <word1>ガラス</word1>
+                <word2>ミラー</word2>
+            </word>
+            <word>
+                <word1>ファン</word1>
+                <word2>エアコン</word2>
+            </word>
+            <word>
+                <word1>コンピューター</word1>
+                <word2>iPad</word2>
+            </word>
+            <word>
+                <word1>自転車</word1>
+                <word2>電気自動車</word2>
+            </word>
+            <word>
+                <word1>クラスの先生</word1>
+                <word2>カウンセラー</word2>
+            </word>
+            <word>
+                <word1>スケッチ</word1>
+                <word2>ドラマ</word2>
+            </word>
+            <word>
+                <word1>ピークキャップ</word1>
+                <word2>バイザーキャップ</word2>
+            </word>
+            <word>
+                <word1>おとぎ話</word1>
+                <word2>神話</word2>
+            </word>
+            <word>
+                <word1>リウ・シーシー</word1>
+                <word2>劉亦菲</word2>
+            </word>
+            <word>
+                <word1>メダル</word1>
+                <word2>金メダル</word2>
+            </word>
+            <word>
+                <word1>鉄観音</word1>
+                <word2>碧螺春</word2>
+            </word>
+            <word>
+                <word1>ローラーコースター</word1>
+                <word2>バンパーカー</word2>
+            </word>
+            <word>
+                <word1>Ruoxi</word1>
+                <word2>清川</word2>
+            </word>
+            <word>
+                <word1>流域</word1>
+                <word2>バケット</word2>
+            </word>
+            <word>
+                <word1>杭州</word1>
+                <word2>蘇州</word2>
+            </word>
+            <word>
+                <word1>ラファイエット</word1>
+                <word2>私の神</word2>
+            </word>
+            <word>
+                <word1>ソウル</word1>
+                <word2>東京</word2>
+            </word>
+            <word>
+                <word1>あごひげ</word1>
+                <word2>眉</word2>
+            </word>
+            <word>
+                <word1>流星花園</word1>
+                <word2>花よりも男</word2>
+            </word>
+            <word>
+                <word1>EEE官</word1>
+                <word2>ニューハーフ</word2>
+            </word>
+            <word>
+                <word1>バタフライ</word1>
+                <word2>ハチ</word2>
+            </word>
+            <word>
+                <word1>ライブラリ</word1>
+                <word2>本屋</word2>
+            </word>
+            <word>
+                <word1>ビーフジャーキー</word1>
+                <word2>乾燥豚肉</word2>
+            </word>
+            <word>
+                <word1>勇敢に前進</word1>
+                <word2>全力で</word2>
+            </word>
+            <word>
+                <word1>油条</word1>
+                <word2>ツイスト</word2>
+            </word>
+            <word>
+                <word1>香港</word1>
+                <word2>台湾</word2>
+            </word>
+            <word>
+                <word1>シャンプー</word1>
+                <word2>コンディショナー</word2>
+            </word>
+            <word>
+                <word1>シャワージェル</word1>
+                <word2>スキンケアウォーター</word2>
+            </word>
+            <word>
+                <word1>枕</word1>
+                <word2>枕を投げる</word2>
+            </word>
+            <word>
+                <word1>Guo Degang</word1>
+                <word2>周立波</word2>
+            </word>
+            <word>
+                <word1>作成者</word1>
+                <word2>脚本家</word2>
+            </word>
+            <word>
+                <word1>醜いアヒルの子</word1>
+                <word2>シンデレラ</word2>
+            </word>
+            <word>
+                <word1>毎日登る</word1>
+                <word2>もしあなたが1人なら</word2>
+            </word>
+            <word>
+                <word1>ザワークラウトの魚</word1>
+                <word2>煮魚</word2>
+            </word>
+            <word>
+                <word1>キルト</word1>
+                <word2>シート</word2>
+            </word>
+            <word>
+                <word1>裸の結婚</word1>
+                <word2>フラッシュ結婚</word2>
+            </word>
+            <word>
+                <word1>バーベキュー</word1>
+                <word2>しゃぶしゃぶ</word2>
+            </word>
+            <word>
+                <word1>バス</word1>
+                <word2>地下鉄</word2>
+            </word>
+            <word>
+                <word1>パン</word1>
+                <word2>餃子</word2>
+            </word>
+            <word>
+                <word1>馬鈴薯粉</word1>
+                <word2>辛い麺</word2>
+            </word>
+            <word>
+                <word1>ホームズ</word1>
+                <word2>工藤新一</word2>
+            </word>
+            <word>
+                <word1>Xie Na</word1>
+                <word2>Li Xiang</word2>
+            </word>
+            <word>
+                <word1>美の陰謀</word1>
+                <word2>清史黄 Hu</word2>
+            </word>
+            <word>
+                <word1>射鵰英雄伝説</word1>
+                <word2>天竜の8つの師団</word2>
+            </word>
+            <word>
+                <word1>MM非</word1>
+                <word2>Le Jia</word2>
+            </word>
+            <word>
+                <word1>近視メガネ</word1>
+                <word2>コンタクトレンズ</word2>
+            </word>
+            <word>
+                <word1>セキュリティ</word1>
+                <word2>ボディガード</word2>
+            </word>
+            <word>
+                <word1>警察</word1>
+                <word2>すばやくキャッチ</word2>
+            </word>
+            <word>
+                <word1>ジンギスカン</word1>
+                <word2>ヌルハチ</word2>
+            </word>
+            <word>
+                <word1>ミルク</word1>
+                <word2>豆乳</word2>
+            </word>
+            <word>
+                <word1>毎日上がる</word1>
+                <word2>もしあなたが1人なら</word2>
+            </word>
+            <word>
+                <word1>ラファイエット</word1>
+                <word2>私の神</word2>
+            </word>
+            <word>
+                <word1>パレスロックハートジェイド</word1>
+                <word2>パレスロックビーズカーテン</word2>
+            </word>
+            <word>
+                <word1>江南スタイル</word1>
+                <word2>最もまばゆい国民的スタイル</word2>
+            </word>
+            <word>
+                <word1>グオ・ダーガン</word1>
+                <word2>周立波</word2>
+            </word>
+            <word>
+                <word1>麻婆豆腐</word1>
+                <word2>保存卵豆腐</word2>
+            </word>
+            <word>
+                <word1>チューインガム</word1>
+                <word2>キシリトール</word2>
+            </word>
+            <word>
+                <word1>近視メガネ</word1>
+                <word2>コンタクトレンズ</word2>
+            </word>
+            <word>
+                <word1>梁山伯と祝英台</word1>
+                <word2>ロミオとジュリエット</word2>
+            </word>
+            <word>
+                <word1>十面埋伏</word1>
+                <word2>四方八方に悩む</word2>
+            </word>
+            <word>
+                <word1>Xie Na Zhang Jie</word1>
+                <word2>D超と孫 Li</word2>
+            </word>
+            <word>
+                <word1>ドラゴンとフェニックスは繁栄しています</word1>
+                <word2>オシドリが水中で遊ぶ</word2>
+            </word>
+            <word>
+                <word1>豚バラ肉 魚の旨味</word1>
+                <word2>Sixi ミートボール</word2>
+            </word>
+            <word>
+                <word1>美の陰謀</word1>
+                <word2>清史黄 Hu</word2>
+            </word>
+            <word>
+                <word1>皇太后は酔っている</word1>
+                <word2>大湯の埋葬花</word2>
+            </word>
+            <word>
+                <word1>マスクメロン</word1>
+                <word2>スイカ</word2>
+            </word>
+            <word>
+                <word1>何 Ji Jiong</word1>
+                <word2>李維嘉</word2>
+            </word>
+            <word>
+                <word1>流星花園</word1>
+                <word2>花よりも男</word2>
+            </word>
+            <word>
+                <word1>竜落とし竜の十八掌</word1>
+                <word2>9つの陰の白い骨の爪</word2>
+            </word>
+            <word>
+                <word1>射鵰英雄伝説</word1>
+                <word2>天竜の8つの師団</word2>
+            </word>
+            <word>
+                <word1>フルーツオレンジ</word1>
+                <word2>より新鮮なオレンジ</word2>
+            </word>
+            <word>
+                <word1>支離滅裂な言葉</word1>
+                <word2>その言葉は意味を表していない</word2>
+            </word>
+            <word>
+                <word1>ジンギスカン</word1>
+                <word2>ヌルハチ</word2>
+            </word>
+            <word>
+                <word1>牛肉の煮込み</word1>
+                <word2>スパイシービーフヌードル</word2>
+            </word>
+            <word>
+                <word1>ハンバーガー</word1>
+                <word2>肉ジアモ</word2>
+            </word>
+            <word>
+                <word1>勇敢に前進</word1>
+                <word2>全力で</word2>
+            </word>
+            <word>
+                <word1>近視メガネ</word1>
+                <word2>コンタクトレンズ</word2>
+            </word>
+            <word>
+                <word1>ゴールデンモンキー</word1>
+                <word2>白うさぎのトフィー</word2>
+            </word>
+            <word>
+                <word1>チャンピオン</word1>
+                <word2>最初</word2>
+            </word>
+            <word>
+                <word1>マウスは近視眼的です</word1>
+                <word2>井戸の底にいるカエル</word2>
+            </word>
+            <word>
+                <word1>Xiaファミリーの3人の娘</word1>
+                <word2>愛は眠りから覚めた</word2>
+            </word>
+            <word>
+                <word1>ホームズ</word1>
+                <word2>工藤新一</word2>
+            </word>
+            <word>
+                <word1>江南スタイル</word1>
+                <word2>最もまばゆい国民的スタイル</word2>
+            </word>
+            <word>
+                <word1>ドラゴンの18本の椰子-落ちるドラゴン</word1>
+                <word2>9つの陰の白い骨の爪</word2>
+            </word>
+            <word>
+                <word1>2 つのちょっとした推測</word1>
+                <word2>子供の頃の恋人</word2>
+            </word>
+            <word>
+                <word1>シャーロック・ホームズ - 工藤新</word1>
+                <word2>ホームズ-コナン</word2>
+            </word>
+            <word>
+                <word1>皇太后は酔っている</word1>
+                <word2>大湯の埋葬花</word2>
+            </word>
+            <word>
+                <word1>ローラーコースター</word1>
+                <word2>バンパーカー</word2>
+            </word>
+            <word>
+                <word1>携帯電話</word1>
+                <word2>固定電話</word2>
+            </word>
+            <word>
+                <word1>ドライクリーニング機</word1>
+                <word2>回転式乾燥機</word2>
+            </word>
+            <word>
+                <word1>ミルク</word1>
+                <word2>豆乳</word2>
+            </word>
+            <word>
+                <word1>パン</word1>
+                <word2>餃子</word2>
+            </word>
+            <word>
+                <word1>階段</word1>
+                <word2>エレベーター</word2>
+            </word>
+            <word>
+                <word1>バタフライ</word1>
+                <word2>ハチ</word2>
+            </word>
+            <word>
+                <word1>結婚</word1>
+                <word2>エンゲージメント</word2>
+            </word>
+            <word>
+                <word1>ローラーコースター</word1>
+                <word2>バンパーカー</word2>
+            </word>
+            <word>
+                <word1>ペン</word1>
+                <word2>ジェルペン</word2>
+            </word>
+            <word>
+                <word1>メダル</word1>
+                <word2>金メダル</word2>
+            </word>
+            <word>
+                <word1>卵</word1>
+                <word2>アヒルの卵</word2>
+            </word>
+            <word>
+                <word1>ペーパータオル</word1>
+                <word2>ウェットワイプ</word2>
+            </word>
+            <word>
+                <word1>バレンタインデー</word1>
+                <word2>光棍節</word2>
+            </word>
+            <word>
+                <word1>油条</word1>
+                <word2>ツイスト</word2>
+            </word>
+            <word>
+                <word1>Ruoxi</word1>
+                <word2>清川</word2>
+            </word>
+            <word>
+                <word1>大きな白いウサギ</word1>
+                <word2>ゴールデンモンキー</word2>
+            </word>
+            <word>
+                <word1>スケッチ</word1>
+                <word2>ドラマ</word2>
+            </word>
+            <word>
+                <word1>パン</word1>
+                <word2>ケーキ</word2>
+            </word>
+            <word>
+                <word1>バブル</word1>
+                <word2>ブリスター</word2>
+            </word>
+            <word>
+                <word1>ドンヨン</word1>
+                <word2>Xu Xian</word2>
+            </word>
+            <word>
+                <word1>コンピューター</word1>
+                <word2>iPad</word2>
+            </word>
+            <word>
+                <word1>シャワージェル</word1>
+                <word2>スキンケアウォーター</word2>
+            </word>
+            <word>
+                <word1>作成者</word1>
+                <word2>脚本家</word2>
+            </word>
+            <word>
+                <word1>バタフライ</word1>
+                <word2>ハチ</word2>
+            </word>
+            <word>
+                <word1>張韶濱</word1>
+                <word2>王心凌</word2>
+            </word>
+            <word>
+                <word1>生活費</word1>
+                <word2>ポケットマネー</word2>
+            </word>
+            <word>
+                <word1>裸の結婚</word1>
+                <word2>フラッシュ結婚</word2>
+            </word>
+            <word>
+                <word1>クッキー</word1>
+                <word2>ポテトチップス</word2>
+            </word>
+            <word>
+                <word1>杭州</word1>
+                <word2>蘇州</word2>
+            </word>
+            <word>
+                <word1>洗面台</word1>
+                <word2>バケット</word2>
+            </word>
+            <word>
+                <word1>円ジダン</word1>
+                <word2>ジェットリー</word2>
+            </word>
+            <word>
+                <word1>ガラス</word1>
+                <word2>ミラー</word2>
+            </word>
+            <word>
+                <word1>MM非</word1>
+                <word2>Le Jia</word2>
+            </word>
+            <word>
+                <word1>セキュリティ</word1>
+                <word2>ボディガード</word2>
+            </word>
+            <word>
+                <word1>ウェディングドレス</word1>
+                <word2>Xifu</word2>
+            </word>
+            <word>
+                <word1>ジャックフルーツ</word1>
+                <word2>ドリアン</word2>
+            </word>
+            <word>
+                <word1>Xie Na</word1>
+                <word2>Li Xiang</word2>
+            </word>
+            <word>
+                <word1>キルト</word1>
+                <word2>シート</word2>
+            </word>
+            <word>
+                <word1>リッチな第2世代</word1>
+                <word2>ガオ・フー・シュアイ</word2>
+            </word>
+            <word>
+                <word1>ライブラリ</word1>
+                <word2>本屋</word2>
+            </word>
+            <word>
+                <word1>香港</word1>
+                <word2>台湾</word2>
+            </word>
+            <word>
+                <word1>チリ</word1>
+                <word2>マスタード</word2>
+            </word>
+            <word>
+                <word1>動物</word1>
+                <word2>植物</word2>
+            </word>
+            <word>
+                <word1>馬鈴薯粉</word1>
+                <word2>辛い麺</word2>
+            </word>
+            <word>
+                <word1>新年</word1>
+                <word2>大晦日</word2>
+            </word>
+            <word>
+                <word1>セミナー</word1>
+                <word2>Yi pure</word2>
+            </word>
+            <word>
+                <word1>メダル</word1>
+                <word2>金メダル</word2>
+            </word>
+            <word>
+                <word1>ラベンダー</word1>
+                <word2>カスミソウ</word2>
+            </word>
+            <word>
+                <word1>ラファイエット</word1>
+                <word2>私の神</word2>
+            </word>
+            <word>
+                <word1>ジン・ヨン</word1>
+                <word2>Gulong</word2>
+            </word>
+            <word>
+                <word1>豆乳</word1>
+                <word2>ミルク</word2>
+            </word>
+            <word>
+                <word1>お米のバケツ</word1>
+                <word2>ご飯茶わん</word2>
+            </word>
+            <word>
+                <word1>チリ</word1>
+                <word2>マスタード</word2>
+            </word>
+            <word>
+                <word1>裸の結婚</word1>
+                <word2>フラッシュ結婚</word2>
+            </word>
+            <word>
+                <word1>バタフライ</word1>
+                <word2>蛾</word2>
+            </word>
+            <word>
+                <word1>ハイヒール</word1>
+                <word2>上履き</word2>
+            </word>
+            <word>
+                <word1>ザワークラウトの魚</word1>
+                <word2>煮魚</word2>
+            </word>
+            <word>
+                <word1>朝</word1>
+                <word2>トゥルーカラー</word2>
+            </word>
+            <word>
+                <word1>リトル瀋陽</word1>
+                <word2>ソン・シャオバオ</word2>
+            </word>
+            <word>
+                <word1>ウェディングドレス</word1>
+                <word2>Xifu</word2>
+            </word>
+            <word>
+                <word1>クラスの先生</word1>
+                <word2>カウンセラー</word2>
+            </word>
+            <word>
+                <word1>マイク</word1>
+                <word2>アンプ</word2>
+            </word>
+            <word>
+                <word1>包拯</word1>
+                <word2>狄仁傑</word2>
+            </word>
+            <word>
+                <word1>バス</word1>
+                <word2>地下鉄</word2>
+            </word>
+            <word>
+                <word1>鉄観音</word1>
+                <word2>碧螺春</word2>
+            </word>
+            <word>
+                <word1>シャンプー</word1>
+                <word2>コンディショナー</word2>
+            </word>
+            <word>
+                <word1>緑茶</word1>
+                <word2>ビターティー</word2>
+            </word>
+            <word>
+                <word1>リバウンドピパ</word1>
+                <word2>ロングボムコットン</word2>
+            </word>
+            <word>
+                <word1>ジェンホァンの伝記</word1>
+                <word2>夢の赤い邸宅</word2>
+            </word>
+            <word>
+                <word1>クラスの先生</word1>
+                <word2>カウンセラー</word2>
+            </word>
+            <word>
+                <word1>ファン</word1>
+                <word2>エアコン</word2>
+            </word>
+            <word>
+                <word1>那英</word1>
+                <word2>韓紅</word2>
+            </word>
+            <word>
+                <word1>警察</word1>
+                <word2>すばやくキャッチ</word2>
+            </word>
+            <word>
+                <word1>残りの女性</word1>
+                <word2>ユー・ジエ</word2>
+            </word>
+            <word>
+                <word1>醜いアヒルの子</word1>
+                <word2>シンデレラ</word2>
+            </word>
+            <word>
+                <word1>あごひげ</word1>
+                <word2>眉</word2>
+            </word>
+            <word>
+                <word1>餃子</word1>
+                <word2>パン</word2>
+            </word>
+            <word>
+                <word1>お母さん</word1>
+                <word2>ニャン</word2>
+            </word>
+            <word>
+                <word1>バス</word1>
+                <word2>地下鉄</word2>
+            </word>
+            <word>
+                <word1>カールヘア</word1>
+                <word2>ストレートヘア</word2>
+            </word>
+            <word>
+                <word1>バーベキュー</word1>
+                <word2>しゃぶしゃぶ</word2>
+            </word>
+            <word>
+                <word1>ピークキャップ</word1>
+                <word2>バイザーキャップ</word2>
+            </word>
+            <word>
+                <word1>彼氏</word1>
+                <word2>元カレ</word2>
+            </word>
+            <word>
+                <word1>MM非</word1>
+                <word2>Le Jia</word2>
+            </word>
+            <word>
+                <word1>枕</word1>
+                <word2>枕を投げる</word2>
+            </word>
+            <word>
+                <word1>風船ガム</word1>
+                <word2>ロリポップ</word2>
+            </word>
+            <word>
+                <word1>洗剤</word1>
+                <word2>サポニンパウダー</word2>
+            </word>
+            <word>
+                <word1>おとぎ話</word1>
+                <word2>神話</word2>
+            </word>
+            <word>
+                <word1>チューインガム</word1>
+                <word2>キシリトール</word2>
+            </word>
+            <word>
+                <word1>ドラゴンボートフェスティバル</word1>
+                <word2>中秋節</word2>
+            </word>
+            <word>
+                <word1>趙敏</word1>
+                <word2>黄 R</word2>
+            </word>
+            <word>
+                <word1>包拯</word1>
+                <word2>狄仁傑</word2>
+            </word>
+            <word>
+                <word1>スパイダーマン</word1>
+                <word2>バットマン</word2>
+            </word>
+            <word>
+                <word1>結婚</word1>
+                <word2>エンゲージメント</word2>
+            </word>
+            <word>
+                <word1>双子</word1>
+                <word2>ドラゴンとフェニックスの胎児</word2>
+            </word>
+            <word>
+                <word1>グオ・ダーガン</word1>
+                <word2>周立波</word2>
+            </word>
+            <word>
+                <word1>自転車</word1>
+                <word2>電気自動車</word2>
+            </word>
+            <word>
+                <word1>醜いアヒルの子</word1>
+                <word2>シンデレラ</word2>
+            </word>
+            <word>
+                <word1>皇帝</word1>
+                <word2>王子様</word2>
+            </word>
+            <word>
+                <word1>EEE官</word1>
+                <word2>ニューハーフ</word2>
+            </word>
+            <word>
+                <word1>ガチョウの羽</word1>
+                <word2>ニワトリの羽</word2>
+            </word>
+            <word>
+                <word1>流域</word1>
+                <word2>バケット</word2>
+            </word>
+            <word>
+                <word1>バーベキュー</word1>
+                <word2>しゃぶしゃぶ</word2>
+            </word>
+            <word>
+                <word1>構成</word1>
+                <word2>論文</word2>
+            </word>
+            <word>
+                <word1>ビーフジャーキー</word1>
+                <word2>乾燥豚肉</word2>
+            </word>
+            <word>
+                <word1>リウ・シーシー</word1>
+                <word2>劉亦菲</word2>
+            </word>
+            <word>
+                <word1>あごひげ</word1>
+                <word2>眉</word2>
+            </word>
+            <word>
+                <word1>豚肉</word1>
+                <word2>牛肉</word2>
+            </word>
+            <word>
+                <word1>男</word1>
+                <word2>男の子</word2>
+            </word>
+            <word>
+                <word1>女性</word1>
+                <word2>美しさ</word2>
+            </word>
+            <word>
+                <word1>スズメ</word1>
+                <word2>カラス</word2>
+            </word>
+            <word>
+                <word1>太った</word1>
+                <word2>脂身の肉</word2>
+            </word>
+            <word>
+                <word1>トップピック</word1>
+                <word2>チャンピオン</word2>
+            </word>
+            <word>
+                <word1>ハンバーガー</word1>
+                <word2>肉夾モー</word2>
+            </word>
+            <word>
+                <word1>ドワーフ</word1>
+                <word2>ひょうたんベイビー</word2>
+            </word>
+            <word>
+                <word1>スパイダーマン</word1>
+                <word2>スパイダースピリット</word2>
+            </word>
+            <word>
+                <word1>おとぎ話</word1>
+                <word2>神話</word2>
+            </word>
+            <word>
+                <word1>携帯電話</word1>
+                <word2>固定電話</word2>
+            </word>
+            <word>
+                <word1>クラスメート</word1>
+                <word2>同じテーブルで</word2>
+            </word>
+            <word>
+                <word1>双子</word1>
+                <word2>ドラゴンとフェニックスの胎児</word2>
+            </word>
+            <word>
+                <word1>リッチな第2世代</word1>
+                <word2>ガオ・フー・シュアイ</word2>
+            </word>
+            <word>
+                <word1>空気</word1>
+                <word2>酸素</word2>
+            </word>
+            <word>
+                <word1>サッカー</word1>
+                <word2>バスケットボール</word2>
+            </word>
+            <word>
+                <word1>ヨルダン</word1>
+                <word2>オリエル</word2>
+            </word>
+            <word>
+                <word1>cs</word1>
+                <word2>cf</word2>
+            </word>
+            <word>
+                <word1>中国移動通信</word1>
+                <word2>チャイナユニコム</word2>
+            </word>
+            <word>
+                <word1>統一ブレイズドポークヌードル</word1>
+                <word2>ラオタンザワークラウト麺</word2>
+            </word>
+            <word>
+                <word1>時計</word1>
+                <word2>テーブル</word2>
+            </word>
+            <word>
+                <word1>ヴァンパイア</word1>
+                <word2>ゾンビ</word2>
+            </word>
+            <word>
+                <word1>メロンの種</word1>
+                <word2>ピーナッツ</word2>
+            </word>
+            <word>
+                <word1>ジャックフルーツ</word1>
+                <word2>ドリアン</word2>
+            </word>
+            <word>
+                <word1>Yili</word1>
+                <word2>蒙牛乳業</word2>
+            </word>
+            <word>
+                <word1>空白</word1>
+                <word2>空気</word2>
+            </word>
+            <word>
+                <word1>空白</word1>
+                <word2>空</word2>
+            </word>
+            <word>
+                <word1>草原</word1>
+                <word2>草</word2>
+            </word>
+            <word>
+                <word1>いちご</word1>
+                <word2>ブルーベリー</word2>
+            </word>
+            <word>
+                <word1>サツマイモ</word1>
+                <word2>ゴーヤ</word2>
+            </word>
+            <word>
+                <word1>Intel</word1>
+                <word2>AMD</word2>
+            </word>
+            <word>
+                <word1>冥王星</word1>
+                <word2>ネプチューン</word2>
+            </word>
+            <word>
+                <word1>美少女</word1>
+                <word2>ちっちゃかわいい</word2>
+            </word>
+            <word>
+                <word1>快適</word1>
+                <word2>ハッピー</word2>
+            </word>
+            <word>
+                <word1>桃</word1>
+                <word2>キウイフルーツ</word2>
+            </word>
+            <word>
+                <word1>バー</word1>
+                <word2>ダンスホール</word2>
+            </word>
+            <word>
+                <word1>DJ</word1>
+                <word2>Dian Yin</word2>
+            </word>
+            <word>
+                <word1>ウラン235</word1>
+                <word2>プルトニウム238</word2>
+            </word>
+            <word>
+                <word1>防空壕</word1>
+                <word2>地下室</word2>
+            </word>
+            <word>
+                <word1>古代の墓</word1>
+                <word2>宝物</word2>
+            </word>
+            <word>
+                <word1>ゴールドとシルバー</word1>
+                <word2>ジュエリー</word2>
+            </word>
+            <word>
+                <word1>炎</word1>
+                <word2>軽い</word2>
+            </word>
+            <word>
+                <word1>ツバメ</word1>
+                <word2>カササギ</word2>
+            </word>
+            <word>
+                <word1>マウス</word1>
+                <word2>キーボードとマウス</word2>
+            </word>
+            <word>
+                <word1>アーキテクチャ</word1>
+                <word2>建物</word2>
+            </word>
+            <word>
+                <word1>トレーニング</word1>
+                <word2>EMU</word2>
+            </word>
+            <word>
+                <word1>マカオ</word1>
+                <word2>香港</word2>
+            </word>
+        </words>
+    </language>
+    <language language="hi-in" alias="हिंदी">
+        <strings>
+            <string name="PleaseSetLanguage">
+                कृपया भाषा सेट करें^_^
+            </string>
+            <string name="languageSetFinish">
+                {user} भाषा को {alias} पर सेट करें
+            </string>
+            <string name="help">
+                <![CDATA[
+            गेम बनाने के लिए /newgame कमांड का प्रयोग करें। खेल शुरू होने के बाद, सभी को अपने खेल के शब्द मिलेंगे, और कुछ खिलाड़ियों को गुप्त एजेंट शब्द मिलेंगे। प्रत्येक नागरिक को अपने शब्दों का वर्णन करने और यह साबित करने की आवश्यकता है कि वह एक अंडरकवर एजेंट नहीं है, लेकिन अंडरकवर एजेंट को उसके शब्दों को जानने न दें। गुप्त एजेंट शब्दों वाले लोगों को भी यह साबित करना होगा कि वे अंडरकवर एजेंट नहीं हैं।
+             प्रत्येक दौर में मतदान का कम से कम 60 सेकंड का समय होना चाहिए।
+             जब नागरिकों की संख्या अंडरकवर एजेंटों की संख्या के समान होती है, तो अंडरकवर एजेंट जीत जाते हैं!
+                ]]>
+            </string>
+            <string name="userCreateGame">
+                {user} एक नया गेम बनाएं
+            </string>
+            <string name="commandInGroup">
+                कृपया ^_^ . समूह में कमांड का प्रयोग करें
+            </string>
+            <string name="record">
+                <![CDATA[
+                खेल में शामिल हों: {joinGame} बार
+                खेल को पूरा करें: {completeGame} बार
+                खेल से बाहर निकलें: {exitGame} बार
+                नागरिक भूमिका: {word_people} खेल
+                गुप्त भूमिका: {word_spy} खेल
+                नागरिक जीत: {word_people_victory} खेल
+                अंडरकवर जीत: {word_spy_victory} गेम
+                भिन्न: {fraction}
+                ]]>
+            </string>
+            <string name="InTheGame">यह समूह खेल में है</string>
+            <string name="joinGame">खेल में शामिल हों</string>
+            <string name="GamePlayerWaiting">अंडरकवर गेम खिलाड़ियों के प्रवेश की प्रतीक्षा में, आइए एक साथ खेलें। मौजूदा
+                सदस्य:
+            </string>
+            <string name="ready">तैयार</string>
+            <string name="TimeoutShutdown">लंबे समय से कोई ऑपरेशन नहीं, गेम अपने आप बंद हो गया है!</string>
+            <string name="sendWord"><![CDATA[{groupName} ग्रुप में आपका गेम वर्ड है: <b>{word}</b>]]></string>
+            <string name="exitGame">{user} खेल से बाहर हो गया है</string>
+            <string name="speechTime">इसके बाद भाषण का समय है। {time} सेकंड के बाद, {round} मतदान का दौर शुरू होगा।
+            </string>
+            <string name="ViewWord">शब्द देखें</string>
+            <string name="gameStart">सभी खिलाड़ी तैयार हैं, खेल शुरू</string>
+            <string name="votingStart">अभी वोट देना शुरू करें, आप किसे खत्म करना चाहते हैं?</string>
+            <string name="notVoteSelf">खुद को वोट नहीं!</string>
+            <string name="abstain">बचना🏳️</string>
+            <string name="success">सफलता</string>
+            <string name="failure">असफलता</string>
+            <string name="abstained">{user} ने परहेज किया</string>
+            <string name="notVote">{user} ने निर्दिष्ट समय के भीतर मतदान नहीं किया</string>
+            <string name="votedTimeEnd">⌛️मतदान का समय समाप्त:</string>
+            <string name="everyoneVoted">✅सभी ने मतदान किया:</string>
+            <string name="gameOver">खेल खत्म</string>
+            <string name="aboutToVoteL">जल्द ही मतदान,</string>
+            <string name="aboutToVoteR">अभी तक बात नहीं की</string>
+            <string name="notAdmin">[<![CDATA[
+            <i>मैंने किसी को बात करते नहीं देखा, हो सकता है कि मेरे पास अनुमति न हो</i>
+            ]]></string>
+            <string name="userWordIs">{user} का शब्द {word} है</string>
+            <string name="eliminatedInThisRound">इस राउंड में एलिमिनेट:</string>
+            <string name="gameSettlement">खेल सुलझाया जा रहा है, कृपया प्रतीक्षा करें</string>
+            <string name="remainingPersonnel">शेष कार्मिक({remainingPeople}/{totalPeople}):</string>
+
+        </strings>
+        <words>
+            <word>
+                <word1>वेलेंटाइन डे</word1>
+                <word2>एकल दिवस</word2>
+            </word>
+            <word>
+                <word1>द अग्ली डकलिंग</word1>
+                <word2>सिंड्रेला</word2>
+            </word>
+            <word>
+                <word1>अमीर दूसरी पीढ़ी</word1>
+                <word2>लंबा और सुंदर</word2>
+            </word>
+            <word>
+                <word1>बबल गम</word1>
+                <word2>लॉलीपॉप</word2>
+            </word>
+            <word>
+                <word1>नमकीन मछली</word1>
+                <word2>उबली हुई मछली</word2>
+            </word>
+            <word>
+                <word1>शैम्पू</word1>
+                <word2>कंडीशनर</word2>
+            </word>
+            <word>
+                <word1>रोलर कोस्टर</word1>
+                <word2>बम्पर कार</word2>
+            </word>
+            <word>
+                <word1>प्रशंसक</word1>
+                <word2>एयर कंडीशनर</word2>
+            </word>
+            <word>
+                <word1>बिस्कुट</word1>
+                <word2>आलू के चिप्स</word2>
+            </word>
+            <word>
+                <word1>ग्लास</word1>
+                <word2>दर्पण</word2>
+            </word>
+            <word>
+                <word1>कागज के तौलिये</word1>
+                <word2>गीले पोंछे</word2>
+            </word>
+            <word>
+                <word1>गिटार</word1>
+                <word2>ल्यूट</word2>
+            </word>
+            <word>
+                <word1>ट्रेन</word1>
+                <word2>सबवे</word2>
+            </word>
+            <word>
+                <word1>गोभी</word1>
+                <word2>सलाद</word2>
+            </word>
+            <word>
+                <word1>डॉल्फ़िन</word1>
+                <word2>समुद्री शेर</word2>
+            </word>
+            <word>
+                <word1>कागज के तौलिये</word1>
+                <word2>रूमाल</word2>
+            </word>
+            <word>
+                <word1>साहस से आगे बढ़ें</word1>
+                <word2>पूरी तरह से बाहर जाएं</word2>
+            </word>
+            <word>
+                <word1>मायोपिक माउस</word1>
+                <word2>कुएं के तल पर मेंढक</word2>
+            </word>
+            <word>
+                <word1>चैंपियन</word1>
+                <word2>पहले</word2>
+            </word>
+            <word>
+                <word1>लैवेंडर</word1>
+                <word2>जिप्सोफिला।</word2>
+            </word>
+            <word>
+                <word1>डॉनी येन</word1>
+                <word2>जेट ली</word2>
+            </word>
+            <word>
+                <word1>सबसे पहले</word1>
+                <word2>पूर्व प्रेमी</word2>
+            </word>
+            <word>
+                <word1>कटहल</word1>
+                <word2>ड्यूरियन</word2>
+            </word>
+            <word>
+                <word1>मेम्फिस</word1>
+                <word2>ले जिया</word2>
+            </word>
+            <word>
+                <word1>मायोपिक माउस</word1>
+                <word2>कुएं के तल पर मेंढक</word2>
+            </word>
+            <word>
+                <word1>च्यूइंग गम</word1>
+                <word2>xylitol</word2>
+            </word>
+            <word>
+                <word1>मिर्च</word1>
+                <word2>सरसों की चटनी</word2>
+            </word>
+            <word>
+                <word1>अमीर दूसरी पीढ़ी</word1>
+                <word2>लंबा और सुंदर</word2>
+            </word>
+            <word>
+                <word1>सुबह की रोशनी</word1>
+                <word2>असली रंग</word2>
+            </word>
+            <word>
+                <word1>सफेद खरगोश</word1>
+                <word2>गोल्डन मंकी</word2>
+            </word>
+            <word>
+                <word1>रोटी</word1>
+                <word2>केक</word2>
+            </word>
+            <word>
+                <word1>कागज के तौलिये</word1>
+                <word2>रूमाल</word2>
+            </word>
+            <word>
+                <word1>गोभी</word1>
+                <word2>सलाद</word2>
+            </word>
+            <word>
+                <word1>वाशिंग पाउडर</word1>
+                <word2>साबुन पाउडर</word2>
+            </word>
+            <word>
+                <word1>डोंग योंग</word1>
+                <word2>जू जियान</word2>
+            </word>
+            <word>
+                <word1>मोबाइल फ़ोन</word1>
+                <word2>लैंडलाइन</word2>
+            </word>
+            <word>
+                <word1>द अग्ली डकलिंग</word1>
+                <word2>सिंड्रेला</word2>
+            </word>
+            <word>
+                <word1>स्पाइडरमैन</word1>
+                <word2>बैटमैन</word2>
+            </word>
+            <word>
+                <word1>डॉल्फ़िन</word1>
+                <word2>समुद्री शेर</word2>
+            </word>
+            <word>
+                <word1>हर तरफ घात लगाकर बैठे हैं</word1>
+                <word2>हर तरफ से भ्रमित</word2>
+            </word>
+            <word>
+                <word1>गिटार</word1>
+                <word2>ल्यूट</word2>
+            </word>
+            <word>
+                <word1>रचना</word1>
+                <word2>निबंध</word2>
+            </word>
+            <word>
+                <word1>बाकी लड़की</word1>
+                <word2>बहन शाही</word2>
+            </word>
+            <word>
+                <word1>सोया दूध</word1>
+                <word2>दूध</word2>
+            </word>
+            <word>
+                <word1>जानवर</word1>
+                <word2>पौधे</word2>
+            </word>
+            <word>
+                <word1>वेलेंटाइन डे</word1>
+                <word2>एकल दिवस</word2>
+            </word>
+            <word>
+                <word1>बबल गम</word1>
+                <word2>लॉलीपॉप</word2>
+            </word>
+            <word>
+                <word1>बिस्कुट</word1>
+                <word2>आलू के चिप्स</word2>
+            </word>
+            <word>
+                <word1>ग्लास</word1>
+                <word2>दर्पण</word2>
+            </word>
+            <word>
+                <word1>प्रशंसक</word1>
+                <word2>एयर कंडीशनर</word2>
+            </word>
+            <word>
+                <word1>कंप्यूटर</word1>
+                <word2>आईपैड</word2>
+            </word>
+            <word>
+                <word1>साइकिल</word1>
+                <word2>इलेक्ट्रिक कार</word2>
+            </word>
+            <word>
+                <word1>रोलर कोस्टर</word1>
+                <word2>बम्पर कार</word2>
+            </word>
+            <word>
+                <word1>कागज के तौलिये</word1>
+                <word2>गीले पोंछे</word2>
+            </word>
+            <word>
+                <word1>हांग्जो</word1>
+                <word2>सूज़ौ</word2>
+            </word>
+            <word>
+                <word1>दाढ़ी</word1>
+                <word2>भौहें</word2>
+            </word>
+            <word>
+                <word1>तितली</word1>
+                <word2>मधुमक्खी</word2>
+            </word>
+            <word>
+                <word1>बीफ झटकेदार</word1>
+                <word2>पोर्क जर्की</word2>
+            </word>
+            <word>
+                <word1>साहस से आगे बढ़ें</word1>
+                <word2>पूरी तरह से बाहर जाएं</word2>
+            </word>
+            <word>
+                <word1>डीप-फ्राइड आटा स्टिक्स</word1>
+                <word2>ट्विस्ट एंड टर्न्स</word2>
+            </word>
+            <word>
+                <word1>ताइवान</word1>
+                <word2>हांगकांग</word2>
+            </word>
+            <word>
+                <word1>शैम्पू</word1>
+                <word2>कंडीशनर</word2>
+            </word>
+            <word>
+                <word1>शॉवर जेल</word1>
+                <word2>त्वचा की देखभाल करने वाला लोशन</word2>
+            </word>
+            <word>
+                <word1>द अग्ली डकलिंग</word1>
+                <word2>सिंड्रेला</word2>
+            </word>
+            <word>
+                <word1>नमकीन मछली</word1>
+                <word2>उबली हुई मछली</word2>
+            </word>
+            <word>
+                <word1>रजाई</word1>
+                <word2>चादरें</word2>
+            </word>
+            <word>
+                <word1>बस</word1>
+                <word2>सबवे</word2>
+            </word>
+            <word>
+                <word1>आलू का आटा</word1>
+                <word2>गर्म और खट्टा पाउडर</word2>
+            </word>
+            <word>
+                <word1>मेम्फिस</word1>
+                <word2>ले जिया</word2>
+            </word>
+            <word>
+                <word1>मायोपिया चश्मा</word1>
+                <word2>संपर्क लेंस</word2>
+            </word>
+            <word>
+                <word1>दूध</word1>
+                <word2>सोया दूध</word2>
+            </word>
+            <word>
+                <word1>गोभी</word1>
+                <word2>सलाद</word2>
+            </word>
+            <word>
+                <word1>लाफायेट</word1>
+                <word2>मेरी अच्छाई</word2>
+            </word>
+            <word>
+                <word1>पैलेस लॉक हार्ट जेड</word1>
+                <word2>पैलेस लॉक मनका पर्दा</word2>
+            </word>
+            <word>
+                <word1>जियांग्नान शैली</word1>
+                <word2>सबसे चमकदार राष्ट्रीय शैली</word2>
+            </word>
+            <word>
+                <word1>मेपो टोफू</word1>
+                <word2>संरक्षित अंडा टोफू</word2>
+            </word>
+            <word>
+                <word1>च्यूइंग गम</word1>
+                <word2>xylitol</word2>
+            </word>
+            <word>
+                <word1>मायोपिया चश्मा</word1>
+                <word2>संपर्क लेंस</word2>
+            </word>
+            <word>
+                <word1>हर तरफ घात लगाकर बैठे हैं</word1>
+                <word2>हर तरफ से भ्रमित</word2>
+            </word>
+            <word>
+                <word1>कैंटालूप</word1>
+                <word2>तरबूज</word2>
+            </word>
+            <word>
+                <word1>ड्रैगन पाम अठारह अवरोही</word1>
+                <word2>नौ यिन सफेद हड्डी के पंजे</word2>
+            </word>
+            <word>
+                <word1>फल संतरे</word1>
+                <word2>ताजा संतरे</word2>
+            </word>
+            <word>
+                <word1>पूर्ण</word1>
+                <word2>भाषा</word2>
+            </word>
+            <word>
+                <word1>ब्रेज़्ड</word1>
+                <word2>मसालेदार</word2>
+            </word>
+            <word>
+                <word1>डॉल्फ़िन</word1>
+                <word2>समुद्री शेर</word2>
+            </word>
+            <word>
+                <word1>बर्गर</word1>
+                <word2>मांस बर्गर</word2>
+            </word>
+            <word>
+                <word1>साहस से आगे बढ़ें</word1>
+                <word2>पूरी तरह से बाहर जाएं</word2>
+            </word>
+            <word>
+                <word1>मायोपिया चश्मा</word1>
+                <word2>संपर्क लेंस</word2>
+            </word>
+            <word>
+                <word1>गोल्डन मंकी</word1>
+                <word2>व्हाइट रैबिट टॉफ़ी</word2>
+            </word>
+            <word>
+                <word1>चैंपियन</word1>
+                <word2>पहले</word2>
+            </word>
+            <word>
+                <word1>मायोपिक माउस</word1>
+                <word2>कुएं के तल पर मेंढक</word2>
+            </word>
+            <word>
+                <word1>रोलर कोस्टर</word1>
+                <word2>बम्पर कार</word2>
+            </word>
+            <word>
+                <word1>मोबाइल फ़ोन</word1>
+                <word2>लैंडलाइन</word2>
+            </word>
+            <word>
+                <word1>ड्राई क्लीनिंग मशीन</word1>
+                <word2>स्पिन ड्रायर</word2>
+            </word>
+            <word>
+                <word1>दूध</word1>
+                <word2>सोया दूध</word2>
+            </word>
+            <word>
+                <word1>डॉल्फ़िन</word1>
+                <word2>समुद्री शेर</word2>
+            </word>
+            <word>
+                <word1>सीढ़ियां</word1>
+                <word2>लिफ्ट</word2>
+            </word>
+            <word>
+                <word1>तितली</word1>
+                <word2>मधुमक्खी</word2>
+            </word>
+            <word>
+                <word1>रोलर कोस्टर</word1>
+                <word2>बम्पर कार</word2>
+            </word>
+            <word>
+                <word1>कागज के तौलिये</word1>
+                <word2>रूमाल</word2>
+            </word>
+        </words>
+    </language>
+    <language language="vi" alias="Tiếng Việt">
+        <strings>
+            <string name="PleaseSetLanguage">
+                Vui lòng đặt ngôn ngữ ^ _ ^
+            </string>
+            <string name="languageSetFinish">
+                {user} đặt ngôn ngữ thành {alias}
+            </string>
+            <string name="help">
+                <![CDATA[
+                Sử dụng lệnh /newgame để tạo trò chơi. Sau khi trò chơi bắt đầu, mọi người sẽ nhận được các từ trò chơi của riêng họ và một số người chơi sẽ nhận được các từ đặc vụ bí mật. Mọi người dân cần mô tả các từ của mình và chứng minh rằng mình không phải là đặc vụ chìm, nhưng không cho mật thám biết lời nói của mình.Những người có lời nói mật thám cũng cần chứng minh mình không phải là mật thám.
+                Mỗi vòng phải có ít nhất 60 giây thời gian biểu quyết.
+                Khi số lượng thường dân bằng với số lượng đặc vụ chìm, thì các đặc vụ chìm sẽ thắng!
+                ]]>
+            </string>
+            <string name="userCreateGame">
+                {user} tạo một trò chơi mới
+            </string>
+            <string name="commandInGroup">
+                Vui lòng sử dụng lệnh nhóm ^ _ ^
+            </string>
+            <string name="record">
+                <![CDATA[
+            Tham gia trò chơi: {joinGame} lần
+            Hoàn thành trò chơi: {completeGame} lần
+            Thoát trò chơi: {exitGame} lần
+            Vai trò dân thường: trò chơi {word_people}
+            Vai trò bí mật: trò chơi {word_spy}
+            Chiến thắng của quân dân: trò chơi {word_people_victory}
+            Undercover thắng: {word_spy_victory} trò chơi
+            Phân số: {fraction}
+                ]]>
+            </string>
+            <string name="InTheGame">Nhóm này trong trò chơi</string>
+            <string name="joinGame">tham gia trò chơi</string>
+            <string name="GamePlayerWaiting">Trò chơi bí mật đang chờ người chơi tham gia, chúng ta hãy chơi cùng nhau.
+                Hiện có các thành viên:
+            </string>
+            <string name="ready">Sẵn sàng</string>
+            <string name="TimeoutShutdown">Không hoạt động trong một thời gian dài, trò chơi đã tự động đóng cửa!
+            </string>
+            <string name="sendWord"><![CDATA[Từ trò chơi của bạn trong nhóm {groupName} là: <b>{word}</b>]]></string>
+            <string name="exitGame">{user} đã thoát khỏi trò chơi</string>
+            <string name="speechTime">Tiếp theo là thời gian phát biểu. Sau {time} giây, vòng biểu quyết {round} sẽ bắt
+                đầu.
+            </string>
+            <string name="ViewWord">xem từ</string>
+            <string name="gameStart">Tất cả người chơi đã sẵn sàng, trò chơi bắt đầu</string>
+            <string name="votingStart">Bắt đầu bỏ phiếu ngay bây giờ, bạn muốn loại ai?</string>
+            <string name="notVoteSelf">không tự bỏ phiếu!</string>
+            <string name="abstain">Kiêng cữ🏳️</string>
+            <string name="success">sự thành công</string>
+            <string name="failure">sự thất bại</string>
+            <string name="abstained">{user} bỏ phiếu trắng</string>
+            <string name="notVote">{user} đã không bỏ phiếu trong thời gian được chỉ định</string>
+            <string name="votedTimeEnd">⌛️thời gian bình chọn kết thúc:</string>
+            <string name="everyoneVoted">✅Mọi người đã bình chọn:</string>
+            <string name="gameOver">TRÒ CHƠI HẾT</string>
+            <string name="aboutToVoteL">Bỏ phiếu sớm,</string>
+            <string name="aboutToVoteR">Chưa nói</string>
+            <string name="notAdmin">[<![CDATA[
+            <i>Tôi không thấy ai nói chuyện, có thể tôi không được phép</i>
+            ]]></string>
+            <string name="userWordIs">Từ của {user} là {word}</string>
+            <string name="eliminatedInThisRound">Bị loại trong vòng này:</string>
+            <string name="gameSettlement">Trò chơi đang được giải quyết, vui lòng đợi</string>
+            <string name="remainingPersonnel">Nhân sự còn lại({remainingPeople}/{totalPeople}):</string>
+
+        </strings>
+        <words>
+            <word>
+                <word1>Ngày lễ tình nhân</word1>
+                <word2>Ngày độc thân</word2>
+            </word>
+            <word>
+                <word1>Vịt con xấu xí</word1>
+                <word2>Cô bé lọ lem</word2>
+            </word>
+            <word>
+                <word1>Thế hệ thứ hai phong phú</word1>
+                <word2>cao và đẹp trai</word2>
+            </word>
+            <word>
+                <word1>Kẹo cao su sủi bọt</word1>
+                <word2>kẹo mút</word2>
+            </word>
+            <word>
+                <word1>Cá muối</word1>
+                <word2>cá luộc</word2>
+            </word>
+            <word>
+                <word1>Dầu gội đầu</word1>
+                <word2>điều hòa</word2>
+            </word>
+            <word>
+                <word1>Tàu lượn siêu tốc</word1>
+                <word2>ô tô cản</word2>
+            </word>
+            <word>
+                <word1>Người hâm mộ</word1>
+                <word2>máy điều hòa không khí</word2>
+            </word>
+            <word>
+                <word1>Bánh quy</word1>
+                <word2>khoai tây chiên</word2>
+            </word>
+            <word>
+                <word1>Kính</word1>
+                <word2>gương</word2>
+            </word>
+            <word>
+                <word1>Khăn giấy</word1>
+                <word2>khăn ướt</word2>
+            </word>
+            <word>
+                <word1>Đàn ghi ta</word1>
+                <word2>lute</word2>
+            </word>
+            <word>
+                <word1>Tàu</word1>
+                <word2>tàu điện ngầm</word2>
+            </word>
+            <word>
+                <word1>Bắp cải</word1>
+                <word2>rau diếp</word2>
+            </word>
+            <word>
+                <word1>Cá heo</word1>
+                <word2>sư tử biển</word2>
+            </word>
+            <word>
+                <word1>Khăn giấy</word1>
+                <word2>khăn tay</word2>
+            </word>
+            <word>
+                <word1>Dũng cảm tiến lên</word1>
+                <word2>cố gắng hết sức</word2>
+            </word>
+            <word>
+                <word1>Chuột thần bí</word1>
+                <word2>ếch ở đáy giếng</word2>
+            </word>
+            <word>
+                <word1>Vô địch</word1>
+                <word2>đầu tiên</word2>
+            </word>
+            <word>
+                <word1>Hoa oải hương</word1>
+                <word2>gypsophila.</word2>
+            </word>
+            <word>
+                <word1>Chân Tử Đan</word1>
+                <word2>Lý Liên Kiệt</word2>
+            </word>
+            <word>
+                <word1>Trước hết</word1>
+                <word2>bạn trai cũ</word2>
+            </word>
+            <word>
+                <word1>Mít</word1>
+                <word2>sầu riêng</word2>
+            </word>
+            <word>
+                <word1>Memphis</word1>
+                <word2>Le Jia</word2>
+            </word>
+            <word>
+                <word1>Chuột thần bí</word1>
+                <word2>ếch ở đáy giếng</word2>
+            </word>
+            <word>
+                <word1>Nhai kẹo cao su</word1>
+                <word2>xylitol</word2>
+            </word>
+            <word>
+                <word1>Ớt</word1>
+                <word2>sốt mù tạt</word2>
+            </word>
+            <word>
+                <word1>Thế hệ thứ hai phong phú</word1>
+                <word2>cao và đẹp trai</word2>
+            </word>
+            <word>
+                <word1>Ánh sáng ban mai</word1>
+                <word2>màu đúng</word2>
+            </word>
+            <word>
+                <word1>Thỏ trắng</word1>
+                <word2>khỉ vàng</word2>
+            </word>
+            <word>
+                <word1>Bánh mì</word1>
+                <word2>bánh</word2>
+            </word>
+            <word>
+                <word1>Khăn giấy</word1>
+                <word2>khăn tay</word2>
+            </word>
+            <word>
+                <word1>Bắp cải</word1>
+                <word2>rau diếp</word2>
+            </word>
+            <word>
+                <word1>Bột giặt</word1>
+                <word2>bột xà phòng</word2>
+            </word>
+            <word>
+                <word1>Dong Yong</word1>
+                <word2>Xu Xian</word2>
+            </word>
+            <word>
+                <word1>Điện thoại di động</word1>
+                <word2>điện thoại cố định</word2>
+            </word>
+            <word>
+                <word1>Vịt con xấu xí</word1>
+                <word2>Cô bé lọ lem</word2>
+            </word>
+            <word>
+                <word1>Người nhện</word1>
+                <word2>người dơi</word2>
+            </word>
+            <word>
+                <word1>Cá heo</word1>
+                <word2>sư tử biển</word2>
+            </word>
+            <word>
+                <word1>Nằm phục kích ở mọi phía</word1>
+                <word2>ngơ ngác tứ phía</word2>
+            </word>
+            <word>
+                <word1>Đàn ghi ta</word1>
+                <word2>lute</word2>
+            </word>
+            <word>
+                <word1>Thành phần</word1>
+                <word2>bài luận</word2>
+            </word>
+            <word>
+                <word1>Cô gái còn lại</word1>
+                <word2>chị gái hoàng gia</word2>
+            </word>
+            <word>
+                <word1>Sữa đậu nành</word1>
+                <word2>sữa</word2>
+            </word>
+            <word>
+                <word1>Động vật</word1>
+                <word2>cây</word2>
+            </word>
+            <word>
+                <word1>Ngày lễ tình nhân</word1>
+                <word2>Ngày độc thân</word2>
+            </word>
+            <word>
+                <word1>Kẹo cao su sủi bọt</word1>
+                <word2>kẹo mút</word2>
+            </word>
+            <word>
+                <word1>Bánh quy</word1>
+                <word2>khoai tây chiên</word2>
+            </word>
+            <word>
+                <word1>Kính</word1>
+                <word2>gương</word2>
+            </word>
+            <word>
+                <word1>Người hâm mộ</word1>
+                <word2>máy điều hòa không khí</word2>
+            </word>
+            <word>
+                <word1>Máy tính</word1>
+                <word2>ipad</word2>
+            </word>
+            <word>
+                <word1>Xe đạp</word1>
+                <word2>ô tô điện</word2>
+            </word>
+            <word>
+                <word1>Tàu lượn siêu tốc</word1>
+                <word2>ô tô cản</word2>
+            </word>
+            <word>
+                <word1>Khăn giấy</word1>
+                <word2>khăn ướt</word2>
+            </word>
+            <word>
+                <word1>Hàng Châu</word1>
+                <word2>Tô Châu</word2>
+            </word>
+            <word>
+                <word1>Râu</word1>
+                <word2>lông mày</word2>
+            </word>
+            <word>
+                <word1>Thịt bò khô</word1>
+                <word2>thịt lợn khô</word2>
+            </word>
+            <word>
+                <word1>Dũng cảm tiến lên</word1>
+                <word2>cố gắng hết sức</word2>
+            </word>
+            <word>
+                <word1>Đài Loan</word1>
+                <word2>Hồng Kông</word2>
+            </word>
+            <word>
+                <word1>Dầu gội đầu</word1>
+                <word2>điều hòa</word2>
+            </word>
+            <word>
+                <word1>Sữa tắm</word1>
+                <word2>kem dưỡng da</word2>
+            </word>
+            <word>
+                <word1>Vịt con xấu xí</word1>
+                <word2>Cô bé lọ lem</word2>
+            </word>
+            <word>
+                <word1>Cá muối</word1>
+                <word2>cá luộc</word2>
+            </word>
+            <word>
+                <word1>Xe buýt</word1>
+                <word2>tàu điện ngầm</word2>
+            </word>
+            <word>
+                <word1>Bột khoai tây</word1>
+                <word2>bột chua nóng</word2>
+            </word>
+            <word>
+                <word1>Memphis</word1>
+                <word2>Le Jia</word2>
+            </word>
+            <word>
+                <word1>Kính cận thị</word1>
+                <word2>kính áp tròng</word2>
+            </word>
+            <word>
+                <word1>Sữa</word1>
+                <word2>sữa đậu nành</word2>
+            </word>
+            <word>
+                <word1>Bắp cải</word1>
+                <word2>rau diếp</word2>
+            </word>
+            <word>
+                <word1>Lafayette</word1>
+                <word2>chúa ơi</word2>
+            </word>
+            <word>
+                <word1>Đậu phụ Mapo</word1>
+                <word2>đậu phụ trứng bảo quản</word2>
+            </word>
+            <word>
+                <word1>Nhai kẹo cao su</word1>
+                <word2>xylitol</word2>
+            </word>
+            <word>
+                <word1>Kính cận thị</word1>
+                <word2>kính áp tròng</word2>
+            </word>
+            <word>
+                <word1>Nằm phục kích ở mọi phía</word1>
+                <word2>ngơ ngác tứ phía</word2>
+            </word>
+            <word>
+                <word1>Dưa vàng</word1>
+                <word2>dưa hấu</word2>
+            </word>
+            <word>
+                <word1>Quả cam</word1>
+                <word2>cam tươi</word2>
+            </word>
+            <word>
+                <word1>Tuyệt đối</word1>
+                <word2>ngôn ngữ</word2>
+            </word>
+            <word>
+                <word1>Braised</word1>
+                <word2>cay</word2>
+            </word>
+            <word>
+                <word1>Cá heo</word1>
+                <word2>sư tử biển</word2>
+            </word>
+            <word>
+                <word1>Bánh mì kẹp thịt</word1>
+                <word2>bánh mì kẹp thịt</word2>
+            </word>
+            <word>
+                <word1>Dũng cảm tiến lên</word1>
+                <word2>cố gắng hết sức</word2>
+            </word>
+            <word>
+                <word1>Kính cận thị</word1>
+                <word2>kính áp tròng</word2>
+            </word>
+            <word>
+                <word1>Vô địch</word1>
+                <word2>đầu tiên</word2>
+            </word>
+            <word>
+                <word1>Điện thoại di động</word1>
+                <word2>điện thoại cố định</word2>
+            </word>
+            <word>
+                <word1>Máy giặt khô</word1>
+                <word2>máy sấy quay</word2>
+            </word>
+            <word>
+                <word1>Sữa</word1>
+                <word2>sữa đậu nành</word2>
+            </word>
+            <word>
+                <word1>Cá heo</word1>
+                <word2>sư tử biển</word2>
+            </word>
+            <word>
+                <word1>Cầu thang</word1>
+                <word2>thang máy</word2>
+            </word>
+            <word>
+                <word1>Khăn giấy</word1>
+                <word2>khăn tay</word2>
+            </word>
+        </words>
+    </language>
+
+</sheishiwodibot>
